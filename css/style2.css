@@ -1,0 +1,21 @@
+.image{
+    position: relative;
+    top: 30px
+    left 30px;
+    
+}
+.phone{
+    position :absolute;
+    left: 300px;
+    background-color: palevioletred
+}
+.moadu{
+    position: absolute;
+    top:479px;
+    position: relative;
+    left:1228px;
+    top: 295px;
+    font-size: 30px;
+    text-align: right;
+    font-weight: 50px;
+}
