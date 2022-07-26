@@ -22,19 +22,19 @@
 
 /* a Color */
 
-a:link {
+nav a:link {
   color: var(--white);
 }
 
-a:visited {
+nav a:visited {
   color: var(--white);
 }
 
-a:hover {
+nav a:hover {
   color: var(--blue);
 }
 
-a:active {
+nav a:active {
   color: var(--blue);
 }
 
