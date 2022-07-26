@@ -111,17 +111,26 @@ table {
 .history .history_li h1 {
     font-size: 50px;
     letter-spacing: 2.5px;
+    background-color: aquamarine;
+    display: inline-block;
 }
 
-.history .history_li div {
+.history .history_li .month_wrap {
+    max-width: 10%
+}
+
+.history .history_li .li_wrap {
     position: relative;
+    box-sizing: border-box;
     padding: 0 0 0 0px; 
     left: 330px;
-    background-color: yellow;
+    /* background-color: #ffff00; */
+    display: inline-block;
+    width: 50%
 }
 
 
-.history .history_li div::before {
+.history .history_li .li_wrap::before {
     content:""; 
     position: absolute; 
     left:0px; 
@@ -136,14 +145,16 @@ table {
     font-weight: 600;
     letter-spacing: 1.6px;
     position: relative;
-    background-color: pink;
+    text-align: right;
+    /* background-color: pink; */
+    width: 50%
 
 } 
 
 .history  .history_li .month::before {
     content: ""; 
     position: absolute; 
-    left: 70px; 
+    left: 100px; 
     top:50%; 
     transform: translateY(-50%); 
     width:20px; 
