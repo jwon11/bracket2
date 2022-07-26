@@ -142,27 +142,31 @@ body{
     color: #1E1E1E;
     font-size: 22px;
     line-height: 40px;
-    display: block;
 }
 .table .tr1{
     width: 169px;
     height: 192px;
+    padding-left : 30px;
 }
 .table .tr2{
     width: 165px;
     height: 192px;
+    padding-left : 30px;
 }
 .table .tr3{
     width: 185px;
     height: 192px;
+    padding-left : 30px;
 }
 .table .tr4{
     width: 164px;
     height: 192px;
+    padding-left : 30px;
 }
 .table .tr5{
     width: 144px;
     height: 112px;
+    padding-left : 30px;
 }
 table .tr5 ul .none{
     list-style: none;
