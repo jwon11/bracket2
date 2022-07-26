@@ -1,0 +1,147 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+}
+
+.info{
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/*info_header*/
+
+.info_header{
+    max-width: 1920px;
+	margin: 80px auto;
+	position: relative;
+}
+
+.info_header_img{
+	width: 100%;
+	vertical-align: middle;
+}
+
+.info_title{
+    text-align: center;
+    font: normal normal bold 40px/58px Noto Sans KR;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+	padding: 5px 10px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate( -50%, -50% );
+}
+
+/*info_body*/
+/*article_left*/
+
+.article_body{
+    margin: 100px auto;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article_rn{
+    width: 211px;
+    height: 84px;
+}
+
+.article_resoft{
+    text-align: left;
+    font: normal normal bold 40px/58px Noto Sans KR;
+    letter-spacing: 0px;
+    color: #1E1E1E;
+    opacity: 1;
+}
+
+.article_news{
+    text-align: left;
+    font: normal normal medium 18px/26px Noto Sans KR;
+    letter-spacing: 0px;
+    color: #C8C8C8;
+    opacity: 1;
+}
+
+.article_index{
+    width: 123px;
+    margin-top: 50px;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.index_circle{
+    position: relative; /*아래에 있을 div(부모)*/
+    width: 42px;
+    border: 0;
+    border-radius: 45px;
+    background-color: black;
+}
+
+.index_img{
+    position: absolute; /*위로 위치할 div(자식)*/
+    margin: 0 auto;
+    top: 25%;
+    left: 25%;
+}
+
+.article_index p{
+    font: normal normal medium 16px/24px Noto Sans KR;
+    letter-spacing: 0.8px;
+    color: #1E1E1E;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+}
+
+/*content*/
+
+.article_content{
+    width: 1060px;
+    margin-top: 134px;
+}
+
+.atricle_title{
+    text-align: left;
+    font: normal normal bold 24px/35px Noto Sans KR;
+    letter-spacing: 1.2px;
+    color: #1E1E1E;
+    opacity: 1;
+}
+
+.article_date{
+    text-align: left;
+    font: normal normal 300 16px/24px Noto Sans KR;
+    letter-spacing: 0.8px;
+    color: #AAAAAA;
+    opacity: 1;
+    margin-bottom: 30px;
+}
+
+.article_article{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 2px solid #184B9F;
+    border-bottom: 2px solid #184B9F;
+}
+
+.article_article p{
+    margin-top: 50px;
+    text-align: left;
+    font: normal normal normal 16px/20px Noto Sans KR;
+    letter-spacing: 0.8px;
+    color: #000000;
+    opacity: 1;
+}
