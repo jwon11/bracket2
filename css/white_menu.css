@@ -164,6 +164,7 @@ nav {
 
 .inner_wrap {
   display: none;
+  width: 100%;
 }
 
 .inner_wrap.active {
