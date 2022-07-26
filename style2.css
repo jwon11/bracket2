@@ -1,0 +1,45 @@
+.image{
+    position: relative;
+    top: 161px;
+    left:0px;
+    width: 1920px;
+    height: 820px;
+    background:transparent linear-gradient(223deg, #E4CDE8 0%,#339BE133 100%) 0% 0% no-repeat padding-box;
+    font-size: 40px;
+    margin: 10px;
+    padding: 30px;
+    border: 0;
+    box-sizing: border-box;
+}  
+    @media  (max-width: 900px) {
+        
+    }
+        
+    
+    
+   
+.body{
+    max-width: 1920px;
+    margin: 0px auto;
+}
+  
+
+.phone{
+    position :absolute;
+    top: 50%;
+    left: 550px;
+    width:680px;
+    height: 482px;
+   
+}
+.moadu{
+    position: absolute;
+    top:30%;
+    left:60%;
+    font-size: 30px;
+    text-align: right;
+    font-weight: 50px;
+    width:452px;
+    height: 105px;
+    
+}
