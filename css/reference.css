@@ -1,0 +1,52 @@
+div{
+    margin: 0 auto;
+    width: 1440px;
+}
+
+
+.text1{
+    font-size: 40px;
+    font-weight: 600;
+    color:#1E1E1E;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.text2{
+    font-size: 18px;
+    color:#C8C8C8;
+    margin-bottom: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* reference */
+
+.reference ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reference ul li {
+    width: calc(100%/6);
+    font-size: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.reference ul li .img_wrap {
+    width: 220px;
+    height: 100px;
+    position: relative; 
+    border: 1px solid #DBDBDB;
+}
+
+.reference ul li .img_wrap img {
+    max-width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
