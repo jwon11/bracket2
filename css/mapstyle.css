@@ -20,7 +20,6 @@ body{
 .organization_info_wrap{
     position: relative;
     /* top: 2690px; */
-    left: 240px;
     top: 140px;
     width: 1420px;
     height: 666px;
@@ -69,7 +68,6 @@ body{
     position: relative;
     font-size: 26px;
     text-align: center;
-    width: 96px;
     height: 37px;
     letter-spacing: 0px;
     color: #ffffff;
@@ -138,12 +136,13 @@ body{
     margin: 22px 40px 21px 40px;
     width: 120px;
 }
-.table ul{
+.table ul li{
     margin: 0;
     letter-spacing: 0px;
     color: #1E1E1E;
     font-size: 22px;
     line-height: 40px;
+    display: block;
 }
 .table .tr1{
     width: 169px;
@@ -194,7 +193,6 @@ table .tr5 ul .none pre{
     height: 1120px;
     box-sizing: border-box;
     position: relative;
-    left: 620px;
     top: 154px;
 }
 
@@ -230,7 +228,6 @@ table .tr5 ul .none pre{
     display: flex;
 	flex-direction: column;
     position: relative;
-    left: 240px;
     top: 100px;
 }
 .index_kakao_map{
