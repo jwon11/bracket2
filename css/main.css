@@ -248,11 +248,6 @@
     position: absolute;
     top: 100px;
     left: 1000px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/serv_app.png');
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 20px;
 }
 
@@ -262,11 +257,6 @@
     position: absolute;
     top: 218px;
     right: 240px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/serv_web.png');
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 20px;
 }
 
@@ -276,11 +266,6 @@
     position: absolute;
     top: 555px;
     left: 1000px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/serv_ai.png');
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 20px;
 }
 
@@ -290,17 +275,38 @@
     position: absolute;
     top: 673px;
     right: 240px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/serv_xr.png');
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 20px;
 }
 
-.serv_content_app .app_front, .serv_content_web .web_front,
-.serv_content_ai .ai_front, .serv_content_xr .xr_front {
+.serv_content_app .app_wrap, .serv_content_web .web_wrap,
+.serv_content_ai .ai_wrap, .serv_content_xr .xr_wrap {
+    position: relative;
+}
+
+.serv_content_app .app_wrap img, .serv_content_web .web_wrap img,
+.serv_content_ai .ai_wrap img, .serv_content_xr .xr_wrap img {
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.serv_content_app .app_wrap .app_front, .serv_content_web .web_wrap .web_front,
+.serv_content_ai .ai_wrap .ai_front, .serv_content_xr .xr_wrap .xr_front {
+    width: 300px;
+    height: 375px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white;
     text-align: center;
+    display: table;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 20px;
+}
+
+.serv_content_app .app_wrap .app_front div, .serv_content_web .web_wrap .web_front div,
+.serv_content_ai .ai_wrap .ai_front div, .serv_content_xr .xr_wrap .xr_front div {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .serv_front_first {
@@ -310,4 +316,3 @@
 .serv_front_second {
     font: normal normal 20px Noto Sans KR;
 }
-
