@@ -86,7 +86,7 @@
     position: relative; /*아래에 있을 div(부모)*/
     width: 42px;
     border: 0;
-    border-radius: 45px;
+    border-radius: 50%;
     background-color: black;
 }
 
@@ -144,4 +144,66 @@
     letter-spacing: 0.8px;
     color: #000000;
     opacity: 1;
+}
+
+.article_bottom{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article_prev{
+    width: 108px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article_prev_circle{
+    position: relative; 
+    width: 42px;
+    height: 42px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.article_prev_img{
+    position: absolute;
+    margin: 0 auto;
+    top: 35%;
+    left: 25%;
+}
+
+.article_prev p{
+    
+    display: flex;
+    align-items: center;
+}
+
+.article_next{
+    width: 108px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article_next_circle{
+    position: relative; 
+    width: 42px;
+    height: 42px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.article_next_img{
+    position: absolute;
+    margin: 0 auto;
+    top: 35%;
+    left: 25%;
+}
+
+.article_next p{
+    
+    display: flex;
+    align-items: center;
 }
