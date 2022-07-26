@@ -1,0 +1,154 @@
+div{
+    margin: 0 auto;
+    width: 1440px;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.text1{
+    font-size: 40px;
+    font-weight: 600;
+    color:#1E1E1E;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.text2{
+    font-size: 18px;
+    color:#C8C8C8;
+    margin-bottom: 50px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* reference */
+
+.reference ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reference ul li {
+    width: calc(100%/6);
+    font-size: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.reference ul li .img_wrap {
+    width: 220px;
+    height: 100px;
+    position: relative; 
+    border: 1px solid #DBDBDB;
+}
+
+.reference ul li .img_wrap img {
+    max-width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* about us */
+
+.aboutus {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+table {
+    border-top: 1px solid #959595;
+    border-collapse: collapse;
+    width: 1440px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.about_li th {
+    font-size: 24px;
+    color:#1E1E1E;
+    text-align: left;
+    letter-spacing: 1.2px;
+}
+.about_li tr td {
+    font-size: 20px;
+    color:#959595;
+}
+
+.about_li th, td {
+    border-bottom: 1px solid #959595;
+    padding: 15px;
+    padding-left: 40px;
+}
+
+
+/* history */
+
+.history {
+    width: 100%;
+    background-color: #F9F9F9;
+    overflow: hidden;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.history_li ol {
+    list-style-type: none;
+    padding: 0 0 0 80px;
+}
+
+.history_li li {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.history .history_li h1 {
+    font-size: 50px;
+    letter-spacing: 2.5px;
+}
+
+.history .history_li div {
+    position: relative;
+    padding: 0 0 0 0px; 
+    left: 330px;
+    background-color: yellow;
+}
+
+
+.history .history_li div::before {
+    content:""; 
+    position: absolute; 
+    left:0px; 
+    top:0; 
+    width:6px; 
+    height:100%; 
+    background:#C8C8C8; 
+}
+
+.history .history_li .month {
+    font-size: 32px; color: #184B9F;
+    font-weight: 600;
+    letter-spacing: 1.6px;
+    position: relative;
+    background-color: pink;
+
+} 
+
+.history  .history_li .month::before {
+    content: ""; 
+    position: absolute; 
+    left: 70px; 
+    top:50%; 
+    transform: translateY(-50%); 
+    width:20px; 
+    height:20px; 
+    border-radius: 100%; 
+    background: #184B9F; 
+}
+
