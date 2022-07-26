@@ -131,6 +131,6 @@ figure{
 
 .info_more button:hover{
     background-color: #184B9F;
-    color: #FFFFFF;
-    transition: 1s;
+    color: white;
+    transition: 0.4s;
 }
