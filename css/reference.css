@@ -16,8 +16,11 @@
 /* reference */
 
 .reference {
+    margin: 0 auto;
+    width: 1440px;
     padding-top: 100px;
     padding-bottom: 250px;
+
 }
 
 .reference ul {
