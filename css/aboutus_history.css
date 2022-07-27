@@ -36,7 +36,7 @@ div{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-.about_li th {
+.about_li tr th {
     font-size: 24px;
     color:#1E1E1E;
     text-align: left;
@@ -51,6 +51,37 @@ div{
     border-bottom: 1px solid #959595;
     padding: 15px;
     padding-left: 40px;
+}
+
+
+
+@media screen and (max-width: 1280px){
+    .aboutus {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+    .about_wrap {
+        max-width: 1000px;
+    }
+
+    .about_wrap tr th {
+        column-width: 200px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .aboutus {
+        margin: 0 auto;
+        max-width: 704px;
+    }
+    .about_wrap {
+        max-width: 704px;
+    }  
+
+    .about_wrap tr th {
+        column-width: 180px;
+    }
 }
 
 
@@ -90,7 +121,7 @@ div{
     box-sizing: border-box;
     padding: 0 0 0 0px; 
     left: 330px;
-    /* background-color: #ffff00; */
+    background-color: #ffff00;
     display: inline-block;
     width: 50%
 }
@@ -112,7 +143,7 @@ div{
     letter-spacing: 1.6px;
     position: relative;
     text-align: right;
-    /* background-color: pink; */
+    background-color: pink;
     width: 50%
 
 } 
