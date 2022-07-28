@@ -152,12 +152,9 @@
 }
 
 .proj_lottie_img_wrap {
-    width: 680px;
-    height: 680px;
     position: absolute;
     top: 371px;
     left: 1000px;
-    background: skyblue;
 }
 
 .proj_ecoce {
@@ -267,12 +264,9 @@
 }
 
 .serv_lottie_img_wrap {
-    width: 680px;
-    height: 680px;
     position: absolute;
     top: 371px;
     left: 240px;
-    background: skyblue;
 }
 
 .serv_content_app {
