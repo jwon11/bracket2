@@ -1,6 +1,15 @@
 @charset "utf-8";
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 
+#newslist{
+	animation: fadein 0.2s;
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
 /* font-size */
 :root {
   --big: 40px;
@@ -356,6 +365,10 @@ footer {
     text-decoration: none;
 }
 
+.info_article:nth-child(n+7){ /*6개 까지만 보이기*/
+    display: none;
+}
+
 .info_article_img{
     width: 680px;
     height: 360px;
@@ -402,18 +415,21 @@ figure{
     margin:100px auto;
 }
 
-.info_more button{
-    height: 50px;
+.info_more_button{
+    width: 200px;
+    height: 73px;
     background: #FFFFFF;
     border: 1px solid #1E1E1E;
     border-radius: 43px;
-    text-align: center;
-    color: #1E1E1E;
-    width: 150px;
     margin: 0 auto;
     display:block;
-}
-
+    text-align: center;
+    font: var(--unnamed-font-style-normal) normal medium 20px/29px var(--unnamed-font-family-noto-sans-kr);
+    font: normal normal medium 20px/29px Noto Sans KR;
+    letter-spacing: 1px;
+    color: #1E1E1E;
+    opacity: 1;
+  }
 .info_more button:hover{
     background-color: #184B9F;
     color: #FFFFFF;
