@@ -1,6 +1,15 @@
 @charset "utf-8";
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 
+#newslist{
+	animation: fadein 0.2s;
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
 /* font-size */
 :root {
   --big: 40px;
@@ -355,8 +364,7 @@ footer {
     margin-top: 50px;
     text-decoration: none;
 }
-
-.info_article:nth-child(n+7){ /*6개 까지만 보이기*/
+.info_article:nth-child(n+7){/* 6개까지만 보이기*/
     display: none;
 }
 
