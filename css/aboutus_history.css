@@ -121,8 +121,8 @@ div{
     box-sizing: border-box;
     padding: 0 0 0 0px; 
     left: 330px;
-    background-color: #ffff00;
-    display: inline-block;
+    /*background-color: #ffff00;*/
+    /*display: inline-block;*/
     width: 50%
 }
 
@@ -143,8 +143,8 @@ div{
     letter-spacing: 1.6px;
     position: relative;
     text-align: right;
-    background-color: pink;
-    width: 50%
+    /*background-color: pink;*/
+    width: 30%;
 
 } 
 
@@ -160,3 +160,13 @@ div{
     background: #184B9F; 
 }
 
+
+
+@media screen and (max-width: 1280px){
+    
+}
+
+    
+@media screen and (max-width: 768px){
+
+}
