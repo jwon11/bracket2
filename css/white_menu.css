@@ -171,23 +171,6 @@ nav {
   display: none;
   width: 100%;
   z-index: 9990;
-  animation: inner 1s;
-}
-
-.inner_wrap.active {
-  display: block;
-}
-
-@keyframes inner {
-  from {
-    transform: translateY(-20%);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 
 .menu_inner {
