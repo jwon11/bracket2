@@ -1,3 +1,4 @@
+
 .text1{
     font-size: 40px;
     font-weight: 600;
@@ -17,7 +18,7 @@
 
 .reference {
     margin: 0 auto;
-    width: 1440px;
+    max-width: 1440px;
     padding-top: 100px;
     padding-bottom: 250px;
 
@@ -26,6 +27,7 @@
 .reference ul {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .reference ul li {
@@ -52,3 +54,28 @@
     transform: translate(-50%, -50%);
 }
 
+
+
+@media screen and (max-width: 1280px){
+    
+
+.reference ul {
+    max-width: 1000px;
+}
+
+.reference ul li {
+    width: calc(100%/3);
+    max-width: 1000px;
+
+}
+}
+
+@media screen and (max-width: 768px){
+
+.reference ul li {
+     width: calc(100%/3);
+     max-width: 704px;
+    
+}
+
+}
