@@ -15,6 +15,9 @@
 
 
 /* reference */
+.text { 
+    border-bottom: 1px solid #9E9E9E;
+}
 
 .reference {
     margin: 0 auto;
