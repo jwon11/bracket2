@@ -31,7 +31,7 @@
     width: 386px;
     text-align: left;
     /* font: 1. font-style 2. font-variant 3. font-weight 4. font-size 5. line-height 6. font-family */
-    font: normal normal bold 40px/58px Noto Sans KR;
+    font: normal normal bold 40px/58px 'Noto Sans KR';
     letter-spacing: 0px;
     color: #1E1E1E;
     white-space: nowrap;
@@ -40,7 +40,7 @@
 .news_title_wrap .news_second {
     width: 123px;
     text-align: left;
-    font: normal normal 500 18px/26px Noto Sans KR;
+    font: normal normal 500 18px/26px 'Noto Sans KR';
     letter-spacing: 0px;
     color: #C8C8C8;
     white-space: nowrap;
@@ -73,7 +73,7 @@
     width: 300px;
     margin-top: 10px;
     text-align: left;
-    font: normal normal bold 18px/26px Noto Sans KR;
+    font: normal normal bold 18px/26px 'Noto Sans KR';
     letter-spacing: 0.9px;
     color: #1E1E1E;
     overflow: hidden;
@@ -87,7 +87,7 @@
     width: 300px;
     margin-top: 30px;
     text-align: left;
-    font: normal normal 300 16px/24px Noto Sans KR;
+    font: normal normal 300 16px/24px 'Noto Sans KR';
     letter-spacing: 0.8px;
     color: #AAAAAA;
 }
@@ -125,7 +125,7 @@
     width: 147px;
     margin: 0 0 auto auto;
     text-align: left;
-    font: normal normal bold 40px/58px Noto Sans KR;
+    font: normal normal bold 40px/58px 'Noto Sans KR';
     letter-spacing: 0px;
     color: #1E1E1E;
     white-space: nowrap;
@@ -135,7 +135,7 @@
     width: 151px;
     margin: 0 0 auto auto;
     text-align: left;
-    font: normal normal 500 18px/26px Noto Sans KR;
+    font: normal normal 500 18px/26px 'Noto Sans KR';
     letter-spacing: 0px;
     color: #C8C8C8;
     white-space: nowrap;
@@ -145,7 +145,7 @@
     width: 460px;
     margin-top: 50px;
     text-align: right;
-    font: normal normal bold 26px/50px Noto Sans KR;
+    font: normal normal bold 26px/50px 'Noto Sans KR';
     letter-spacing: 0px;
     color: #1E1E1E;
     white-space: nowrap;
@@ -239,7 +239,7 @@
 .serv_title_wrap .serv_first {
     width: 110px;
     text-align: left;
-    font: normal normal bold 40px/58px Noto Sans KR;
+    font: normal normal bold 40px/58px 'Noto Sans KR';
     letter-spacing: 0px;
     color: #1E1E1E;
     white-space: nowrap;
@@ -248,7 +248,7 @@
 .serv_title_wrap .serv_second {
     width: 72px;
     text-align: left;
-    font: normal normal 500 18px/26px Noto Sans KR;
+    font: normal normal 500 18px/26px 'Noto Sans KR';
     letter-spacing: 0px;
     color: #C8C8C8;
 }
@@ -257,7 +257,7 @@
     width: 534px;
     margin-top: 50px;
     text-align: left;
-    font: normal normal bold 26px/50px Noto Sans KR;
+    font: normal normal bold 26px/50px 'Noto Sans KR';
     letter-spacing: 0px;
     color: #1E1E1E;
     white-space: nowrap;
@@ -305,19 +305,16 @@
     border-radius: 20px;
 }
 
-.serv_content_app .app_wrap, .serv_content_web .web_wrap,
-.serv_content_ai .ai_wrap, .serv_content_xr .xr_wrap {
+.serv_content_wrap {
     position: relative;
 }
 
-.serv_content_app .app_wrap img, .serv_content_web .web_wrap img,
-.serv_content_ai .ai_wrap img, .serv_content_xr .xr_wrap img {
+.content_img_wrap img {
     border-radius: 20px;
     z-index: -1;
 }
 
-.serv_content_app .app_wrap .app_front, .serv_content_web .web_wrap .web_front,
-.serv_content_ai .ai_wrap .ai_front, .serv_content_xr .xr_wrap .xr_front {
+.content_front {
     width: 300px;
     height: 375px;
     position: absolute;
@@ -330,17 +327,39 @@
     border-radius: 20px;
 }
 
-.serv_content_app .app_wrap .app_front div, .serv_content_web .web_wrap .web_front div,
-.serv_content_ai .ai_wrap .ai_front div, .serv_content_xr .xr_wrap .xr_front div {
+.content_behind {
+    width: 300px;
+    height: 375px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white;
+    text-align: center;
+    display: none;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    border-radius: 20px;
+    transform: scale(1.2);
+}
+
+.content_front div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.content_behind div {
     display: table-cell;
     vertical-align: middle;
 }
 
 .serv_front_first {
-    font: normal normal 30px Noto Sans KR;
+    font: normal normal 30px 'Noto Sans KR';
 }
 
 .serv_front_second {
-    font: normal normal 20px Noto Sans KR;
+    font: normal normal 20px 'Noto Sans KR';
+}
+
+.content_behind p {
+    font: normal normal 20px 'Noto Sans KR';
 }
 /* ---------- resoft service css end ----------  */
