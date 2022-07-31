@@ -85,6 +85,8 @@ div{
 }
 
 
+
+
 /* history */
 
 .history {
@@ -96,69 +98,82 @@ div{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-.history_li ol {
-    list-style-type: none;
-    padding: 0 0 0 80px;
+.article {
+    display: flex;
 }
 
-.history_li li {
-    font-size: 20px;
-    line-height: 40px;
-}
-
-.history .history_li h1 {
-    font-size: 50px;
-    letter-spacing: 2.5px;
-    display: inline-block;
-}
-
-.history .history_li .month_wrap {
-    max-width: 10%
-}
-
-.history .history_li .li_wrap {
-    position: relative;
-    box-sizing: border-box;
-    padding: 0 0 0 0px; 
-    left: 330px;
-    /*background-color: #ffff00;*/
-    /*display: inline-block;*/
-    width: 50%
-}
-
-
-.history .history_li .li_wrap::before {
-    content:""; 
-    position: absolute; 
-    left:0px; 
-    top:0; 
-    width:6px; 
-    height:100%; 
-    background:#C8C8C8; 
-}
-
-.history .history_li .month {
-    font-size: 32px; color: #184B9F;
-    font-weight: 600;
-    letter-spacing: 1.6px;
-    position: relative;
+.article .year {
     text-align: right;
-    /*background-color: pink;*/
-    width: 30%;
-
-} 
-
-.history  .history_li .month::before {
-    content: ""; 
-    position: absolute; 
-    left: 100px; 
-    top:50%; 
-    transform: translateY(-50%); 
-    width:20px; 
-    height:20px; 
-    border-radius: 100%; 
-    background: #184B9F; 
+    margin-right: 195px;
+    position: relative;
+    font-size:50px;
+    letter-spacing: 2.5px;
+    color:#000000;
+    font-weight: 600;
 }
+
+.article .year p:last-child {
+    line-height: 220px;
+}
+
+
+.history_li {
+    max-width: 800px;
+    margin-top: 30px;
+}
+
+
+.timeline_li {
+	padding: 3em 2em 2em;
+	position: relative;
+	color: rgba(#1E1E1E, .7);
+	border-left: 6px solid #C8C8C8;
+    max-width: 800px;
+}
+
+.timeline_li ol {
+    margin-top: -40px;
+    padding: 0 0 70px 10px;
+}
+
+.timeline_li ol li {
+    font-size: 20px;
+    line-height:40px;
+}
+
+	
+.timeline_li::before {
+    content: attr(date-is);
+    position: absolute;
+    left: -90px;
+    font-weight: bold;
+    top: -10px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color:#184B9F;
+    text-align: right;
+}
+
+.timeline_li::after {
+	width: 20px;
+	height: 20px;
+	display: block;
+	top: 0;
+	position: absolute;
+	left: -15px;
+	border-radius: 50%;
+	content: '';
+	border: 2px solid #184B9F;
+	background: #184B9F;
+}
+
+
+.timeline_li:last-child {
+    border-color: transparent;
+}
+
 
 
 
