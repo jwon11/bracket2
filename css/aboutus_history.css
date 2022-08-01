@@ -113,7 +113,7 @@ div{
 }
 
 .article .year p:last-child {
-    line-height: 220px;
+    line-height: 215px;
 }
 
 
@@ -129,6 +129,8 @@ div{
 	color: rgba(#1E1E1E, .7);
 	border-left: 6px solid #C8C8C8;
     max-width: 800px;
+    list-style: none;
+    
 }
 
 .timeline_li ol {
@@ -178,10 +180,40 @@ div{
 
 
 @media screen and (max-width: 1280px){
+
+    .text {
+        max-width: 1000px;
+    }
+
+
+    .article {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+
     
+    .history_li {
+        max-width: 620px;
+    }
+
+    .timeline_li {
+        max-width: 620px;
+    }
+
+
+
 }
 
     
 @media screen and (max-width: 768px){
+    .article {
+        margin: 0 auto;
+        max-width: 704px;
+    }
+
+    .timeline_li {
+        max-width: 430px;
+        left: -70px;
+    }
 
 }
