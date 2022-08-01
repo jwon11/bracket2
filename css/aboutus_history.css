@@ -1,5 +1,6 @@
 div{
     margin: 0 auto;
+    width: 1440px;
 }
 
 
@@ -9,35 +10,25 @@ div{
     color:#1E1E1E;
     font-family: 'Noto Sans KR', sans-serif;
 }
-
 .text2{
     font-size: 18px;
     color:#C8C8C8;
     margin-bottom: 50px;
     font-family: 'Noto Sans KR', sans-serif;
 }
-
-
-
 /* about us */
 
 
-
 .aboutus {
-    max-width: 1440px;
-    margin: 0 auto;
-    width:100%;
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
 .about_wrap {
     border-top: 1px solid #959595;
     border-collapse: collapse;
     width: 1440px;
     font-family: 'Noto Sans KR', sans-serif;
 }
-
 .about_li tr th {
     font-size: 24px;
     color:#1E1E1E;
@@ -48,15 +39,11 @@ div{
     font-size: 20px;
     color:#959595;
 }
-
 .about_li th, .about_li td {
     border-bottom: 1px solid #959595;
     padding: 15px;
     padding-left: 40px;
 }
-
-
-
 @media screen and (max-width: 1280px){
     .aboutus {
         margin: 0 auto;
@@ -64,7 +51,6 @@ div{
     }
     .about_wrap {
         max-width: 1000px;
-        width: auto;
     }
 
     .about_wrap tr th {
@@ -74,17 +60,18 @@ div{
 
 
 @media screen and (max-width: 768px){
-    .aboutus .about_wrap {
+    .aboutus {
         margin: 0 auto;
         max-width: 704px;
     }
+    .about_wrap {
+        max-width: 704px;
+    }  
 
     .about_wrap tr th {
         column-width: 180px;
     }
 }
-
-
 
 
 
@@ -99,34 +86,26 @@ div{
     font-family: 'Noto Sans KR', sans-serif;
 }
 
-.history_wrap {
-    max-width: 1440px;
-}
 .article {
     display: flex;
 }
 
 .article .year {
     text-align: right;
-    margin-right: 10px;
+    margin-right: 195px;
     position: relative;
     font-size:50px;
     letter-spacing: 2.5px;
     color:#000000;
     font-weight: 600;
-
 }
 
 .article .year p:last-child {
     line-height: 215px;
 }
-
-
 .history_li {
     max-width: 800px;
     margin-top: 30px;
-
-
 }
 
 
@@ -137,36 +116,31 @@ div{
 	color: rgba(#1E1E1E, .7);
 	border-left: 6px solid #C8C8C8;
     max-width: 800px;
-    margin-left: 200px;
-    
-    
-}
 
+
+}
 .timeline_li ol {
     margin-top: -40px;
     padding: 0 0 70px 10px;
     list-style: none;
 }
-
 .timeline_li ol li {
     font-size: 20px;
     line-height:40px;
-
 }
-
 	
 .timeline_li::before {
     content: attr(date-is);
     position: absolute;
     left: -90px;
     font-weight: bold;
-    text-align: right;
     top: -10px;
     display: block;
+    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 32px;
     color:#184B9F;
-
+    text-align: right;
 }
 
 .timeline_li::after {
@@ -181,47 +155,31 @@ div{
 	border: 2px solid #184B9F;
 	background: #184B9F;
 }
-
-
 .timeline_li:last-child {
     border-color: transparent;
 }
-
-
-
-
 @media screen and (max-width: 1280px){
-
     .text {
         max-width: 1000px;
     }
-
-
     .article {
         margin: 0 auto;
         max-width: 1000px;
     }
-
     
     .history_li {
         max-width: 620px;
     }
-
     .timeline_li {
         max-width: 620px;
     }
-
-
-
 }
-
     
 @media screen and (max-width: 768px){
     .article {
         margin: 0 auto;
         max-width: 704px;
     }
-
     .timeline_li {
         max-width: 430px;
         left: -70px;
