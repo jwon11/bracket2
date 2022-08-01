@@ -124,23 +124,26 @@ div{
 
 
 .timeline_li {
+    list-style: none;
 	padding: 3em 2em 2em;
 	position: relative;
 	color: rgba(#1E1E1E, .7);
 	border-left: 6px solid #C8C8C8;
     max-width: 800px;
-    list-style: none;
+    
     
 }
 
 .timeline_li ol {
     margin-top: -40px;
     padding: 0 0 70px 10px;
+    list-style: none;
 }
 
 .timeline_li ol li {
     font-size: 20px;
     line-height:40px;
+
 }
 
 	
