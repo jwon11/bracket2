@@ -19,7 +19,6 @@
     top: 100px;
     left: 240px;
     width: 1440px;
-    height: 450px;
 }
 
 .news_title_wrap {
@@ -47,8 +46,8 @@
 }
 
 .content_wrap {
-    width: 1440px;
-    height: 316px;
+    /* width: 1440px;
+    height: 316px; */
     margin-top: 50px;
     display: flex;
     align-items: center;
@@ -155,6 +154,10 @@
     position: absolute;
     top: 371px;
     left: 1000px;
+}
+
+.proj_lottie_img_wrap_responsive {
+    display: none;
 }
 
 .proj_ecoce {
@@ -269,6 +272,10 @@
     left: 240px;
 }
 
+.serv_lottie_img_wrap_responsive {
+    display: none;
+}
+
 .serv_content_app {
     width: 300px;
     height: 375px;
@@ -363,3 +370,200 @@
     font: normal normal 20px 'Noto Sans KR';
 }
 /* ---------- resoft service css end ----------  */
+
+/* ---------- media query css start ---------- */
+@media screen and (max-width: 1280px) {
+    /* ---------- resoft news 1280px css start ----------  */
+    .news {
+        height: 1016px;
+    }
+    .news_wrap {
+        width: 640px;
+        left: 320px;
+    }
+
+    .news_title_wrap, .news_title_wrap .news_first, .news_title_wrap .news_second {
+        margin: 0 auto;
+    }
+
+    .content_wrap {
+        flex-wrap: wrap;
+    }
+
+    .content.tablet {
+        margin-top: 50px;
+    }
+
+    .left_block {
+        display: none;
+    }
+
+    .right_block.none {
+        display: none;
+    }
+    /* ---------- resoft news 1280px css end ----------  */
+
+    /* ---------- resoft project 1280px css start ----------  */
+    .proj_wrap {
+        width: 1280px;
+        height: 1911px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proj_title_wrap, .proj_ecoce, .proj_moado {
+        position: static;
+        margin: 0 auto;
+    }
+
+    .proj_title_wrap {
+        width: 490px;
+        margin-top: 100px;
+    }
+
+    .proj_first, .proj_second {
+        margin: 0 auto !important;
+    }
+
+    .proj_title_wrap .proj_third {
+        width: 490px;
+        text-align: center;
+    }
+
+    .proj_lottie_img_wrap {
+        display: none;
+    }
+
+    .proj_lottie_img_wrap_responsive {
+        display: block;
+    }
+
+    .proj_ecoce {
+        margin-top: 63px;
+    }
+
+    .proj_moado {
+        margin-top: 50px;
+    }
+    /* ---------- resoft project 1280px css end ----------  */
+
+    /* ---------- resoft service 1280px css start ----------  */
+    .serv_wrap {
+        width: 1280px;
+        height: 1853px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .serv_title_wrap {
+        position: static;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    .serv_first, .serv_second, .serv_third {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .serv_lottie_img_wrap {
+        display: none;
+    }
+
+    .serv_lottie_img_wrap_responsive {
+        display: block;
+    }
+
+    .serv_content_app {
+        top: 855px;
+        left: 320px;
+    }
+
+    .serv_content_web {
+        top: 973px;
+        right: 320px;
+    }
+
+    .serv_content_ai {
+        top: 1310px;
+        left: 320px;
+    }
+
+    .serv_content_xr {
+        top: 1428px;
+        right: 320px;
+    }
+    /* ---------- resoft service 1280px css end ----------  */
+}
+
+@media screen and (max-width: 768px) {
+    /* ---------- resoft news 768px css start ----------  */
+    .news_wrap {
+        width: 704px;
+        left: 32px;
+    }
+
+    .news_title_wrap, .news_title_wrap .news_first, .news_title_wrap .news_second {
+        margin: 0;
+    }
+
+    .right_block {
+        width: 104px;
+    }
+    /* ---------- resoft news 768px css end ----------  */
+
+    /* ---------- resoft project 768px css start ----------  */
+    .proj_wrap {
+        width: 768px;
+    }
+
+    .proj_title_wrap {
+        margin-right: 32px;
+    }
+
+    .proj_first, .proj_second {
+        margin-right: 0 !important;
+    }
+
+    .proj_title_wrap .proj_third {
+        text-align: right;
+    }
+    /* ---------- resoft project 768px css end ----------  */
+
+    /* ---------- resoft service 768px css start ----------  */
+    .serv_wrap {
+        width: 768px;
+    }
+
+    .serv_title_wrap {
+        margin-left: 32px;
+    }
+
+    .serv_first, .serv_second, .serv_third {
+        margin: 0;
+        text-align: left;
+    }
+
+    .serv_content_app {
+        top: 855px;
+        left: 32px;
+    }
+
+    .serv_content_web {
+        top: 973px;
+        right: 32px;
+    }
+
+    .serv_content_ai {
+        top: 1310px;
+        left: 32px;
+    }
+
+    .serv_content_xr {
+        top: 1428px;
+        right: 32px;
+    }
+    /* ---------- resoft service 768px css end ----------  */
+}
