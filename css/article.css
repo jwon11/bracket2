@@ -1,6 +1,15 @@
 @charset "utf-8";
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 
+#article{
+	animation: fadein 0.2s;
+}
+
+@keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
 /* font-size */
 :root {
   --big: 40px;
@@ -67,6 +76,7 @@ nav a:active {
 body {
   font-family: "Noto Sans KR", sans-serif;
   max-width: 1920px;
+  width: 100%;
   margin: 0px auto;
 }
 
@@ -315,7 +325,7 @@ footer {
 	transform: translate( -50%, -50% );
 }
 
-/*info_body*/
+/*article_body*/
 /*article_left*/
 
 .article_body{
@@ -323,6 +333,10 @@ footer {
     max-width: 1440px;
     display: flex;
     justify-content: space-between;
+}
+
+.article_left{
+    height: 176px;
 }
 
 .article_rn{
@@ -527,4 +541,89 @@ footer {
 .article_next:hover p{
     color: #184B9F;
     transition: 0.3s;
+}
+
+
+/* 반응형웹 */
+
+@media screen and (max-width: 1280px) {
+  .logo_wrap {
+    left: 231px;
+  }
+
+  .toggle_wrap {
+    right: 140px;
+  }
+
+  .main_header .header_txt,
+  .main_header .button-container {
+    left: 140px;
+  }
+
+  .footer_wrap {
+    left: 83px;
+  }
+  
+  .footer_info_wrap {
+    padding-left: 83px;
+    padding-right: 50px;
+    gap: 60px;
+  }
+
+  /*article*/
+  .article_body {
+    display: block;
+    align-content: space-between;
+  }
+
+  .article_left {
+    height: 130px;
+  }
+
+  .article_index {
+    margin-top: 10px;
+  }
+
+  .article_content{
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .article_article img{
+    width: 100%;
+  }
+
+  .article_bottom {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .main_menu li {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo_wrap {
+    left: 32px;
+  }
+
+  .toggle_wrap {
+    right: 32px;
+  }
+
+  .main_menu li {
+    display: none;
+  }
+
+  .main_header .header_txt,
+  .main_header .button-container {
+    left: 75px;
+  }
+
+  .footer_info_wrap {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
