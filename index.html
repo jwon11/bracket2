@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="./css/mediaq.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/reference.css"> 
-
 </head>
 <body>
     <!-- menu -->
@@ -25,7 +24,7 @@
             </div>
 
             <ul class="main_menu">
-                <li><a href="./about.html">회사소개</a></li>
+                <li><a href="./menu_header_footer.html">회사소개</a></li>
                 <li><a href="./overview.html">사업현황</a></li>
                 <li><a href="./newslist.html">정보마당</a></li>
             </ul>
@@ -35,9 +34,11 @@
             </div>
         </div>
         <div class="inner_wrap">
+            <hr>
             <div class="menu_inner">
                 <ul class="inner_ul">
                     <li class="inner_li">
+                        <div class="menu_slow"><a href="./about.html">회사소개</a></div>
                         <ul>
                             <li><a href="#">REsoft소개</a></li>
                             <li><a href="#">연혁</a></li>
@@ -49,6 +50,7 @@
                 </ul>
                 <ul class="inner_ul">
                     <li class="inner_li">
+                        <div class="menu_slow"><a href="./overview.html">사업현황</a></div>
                         <ul>
                             <li><a href="#">ECOCE</a></li>
                             <li><a href="#">moaDo</a></li>
@@ -58,6 +60,7 @@
                 </ul>
                 <ul class="inner_ul"> 
                     <li class="inner_li">
+                        <div class="menu_slow"><a href="./newslist.html">정보마당</a></div>
                         <ul>
                             <li><a href="#">REsoft소식</a></li>
                         </ul>
@@ -84,7 +87,7 @@
 
         <div class="button-container">
             <button class="prev" onclick="prevNext(-1)"></button>
-            <button class="play" onclick="stopSlide()"></button>
+            <button class="stop" onclick="stopSlide()"></button>
             <button class="next" onclick="prevNext(1)"></button>
         </div>
 
@@ -124,8 +127,8 @@
                         </a>
                     </div>
                     <div class="left_block"></div>
-                    <div class="right_block none"></div>
-                    <div class="content tablet">
+                    <div class="right_block"></div>
+                    <div class="content">
                         <a href="./article.html">
                             <div class="content_img_wrap">
                                 <img src="./images/news_content.png" class="content_img" alt="">
@@ -136,7 +139,7 @@
                     </div>
                     <div class="left_block"></div>
                     <div class="right_block"></div>
-                    <div class="content tablet">
+                    <div class="content">
                         <a href="./article.html">
                             <div class="content_img_wrap">
                                 <img src="./images/news_content.png" class="content_img" alt="">
@@ -160,10 +163,7 @@
                 </p>
             </div>
             <div class="proj_lottie_img_wrap">
-                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_pwohahvd.json" background="transparent" speed="1" style="width: 680px; height: 680px;" loop autoplay></lottie-player>
-            </div>
-            <div class="proj_lottie_img_wrap_responsive">
-                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_pwohahvd.json" background="transparent" speed="1" style="width: 680px; height: 591px;" loop autoplay></lottie-player>
+                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_pwohahvd.json"  background="transparent"  speed="1"  style="width: 680px; height: 680px;"  loop autoplay></lottie-player>
             </div>
             <div class="proj_ecoce">
                 <div class="ecoce_wrap">
@@ -205,90 +205,79 @@
                 </p>
             </div>
             <div class="serv_lottie_img_wrap">
-                <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_q5qvqtnr.json" background="transparent" speed="1" style="width: 680px; height: 680px;" loop autoplay></lottie-player>
-            </div>
-            <div class="serv_lottie_img_wrap_responsive">
-                <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_q5qvqtnr.json" background="transparent" speed="1" style="width: 534px; height: 534px;" loop autoplay></lottie-player>
+                <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_q5qvqtnr.json"  background="transparent"  speed="1"  style="width: 680px; height: 680px;"  loop autoplay></lottie-player>
             </div>
             <div class="serv_content_app">
-                <div class="serv_content_wrap">
-                    <div class="content_img_wrap">
-                        <img src="./images/serv_app.png" class="serv_content_img" alt="">
+                <div class="app_wrap">
+                    <div class="app_img_wrap">
+                        <img src="./images/serv_app.png" alt="">
                     </div>
-                    <div class="content_front">
+                    <div class="app_front">
                         <div>
                             <p class="serv_front_first">앱(APP) 개발</p>
                             <p class="serv_front_second">ANDROID / IOS</p>
                         </div>
                     </div>
-                    <div class="content_behind">
-                        <div>
-                            <p>Android 앱 개발</p>
-                            <p>iOS 앱 개발</p>
-                            <p>플랫폼 기획 및 설계</p>
-                        </div>
-                    </div>
                 </div>
+                <!-- <div>
+                    <p>Android 앱 개발</p>
+                    <p>iOS 앱 개발</p>
+                    <p>플랫폼 기획 및 설계</p>
+                </div> -->
             </div>
             <div class="serv_content_web">
-                <div class="serv_content_wrap">
-                    <div class="content_img_wrap">
-                        <img src="./images/serv_web.png" class="serv_content_img"  alt="">
+                <div class="web_wrap">
+                    <div class="web_img_wrap">
+                        <img src="./images/serv_web.png" alt="">
                     </div>
-                    <div class="content_front">
+                    <div class="web_front">
                         <div>
                             <p class="serv_front_first">웹(WEB) 구축</p>
                             <p class="serv_front_second">RESPONSIVE WEB</p>
                         </div>
                     </div>
-                    <div class="content_behind">
-                        <div>
-                            <p>반응형 홈페이지 구축</p>
-                            <p>데이터베이스 구축</p>
-                            <p>빅데이터 구축</p>
-                        </div>
-                    </div>
                 </div>
+                <!-- <div>
+                    <p>반응형 홈페이지 구축</p>
+                    <p>데이터베이스 구축</p>
+                    <p>빅데이터 구축</p>
+                </div> -->
             </div>
             <div class="serv_content_ai">
-                <div class="serv_content_wrap">
-                    <div class="content_img_wrap">
-                        <img src="./images/serv_ai.png" class="serv_content_img"  alt="">
+                <div class="ai_wrap">
+                    <div class="ai_img_wrap">
+                        <img src="./images/serv_ai.png" alt="">
                     </div>
-                    <div class="content_front">
+                    <div class="ai_front">
                         <div>
                             <p class="serv_front_first">AI 기반 기술개발</p>
                             <p class="serv_front_second">AI BIGDATA</p>
                         </div>
                     </div>
-                    <div class="content_behind">
-                        <div>
-                            <p>AI 대화형 챗봇</p>
-                            <p>자동 객체인식 검출기</p>
-                            <p>딥러닝 학습 모델</p>
-                        </div>
-                    </div>
                 </div>
+                <!-- <div>
+                    <p>AI 대화형 챗봇</p>
+                    <p>자동 객체인식 검출기</p>
+                    <p>딥러닝 학습 모델</p>
+                </div> -->
             </div>
             <div class="serv_content_xr">
-                <div class="serv_content_wrap">
-                    <div class="content_img_wrap">
-                        <img src="./images/serv_xr.png" class="serv_content_img"  alt="">
+                <div class="xr_wrap">
+                    <div class="xr_img_wrap">
+                        <img src="./images/serv_xr.png" alt="">
                     </div>
-                    <div class="content_front">
+                    <div class="xr_front">
                         <div>
                             <p class="serv_front_first">XR 콘텐츠 구현</p>
                             <p class="serv_front_second">METAVERSE</p>
                         </div>
                     </div>
-                    <div class="content_behind">
-                        <div>
-                            <p>실감형 플랫폼 구축</p>
-                            <p>가상현실 콘텐츠 제작</p>
-                            <p>게임콘텐츠 제작</p>
-                        </div>
-                    </div>
                 </div>
+                <!-- <div>
+                    <p>실감형 플랫폼 구축</p>
+                    <p>가상현실 콘텐츠 제작</p>
+                    <p>게임콘텐츠 제작</p>
+                </div> -->
             </div>
         </div>
     </div>
@@ -482,6 +471,7 @@
 
     <script src="./js/menu.js"></script>
     <script src="./js/slides.js"></script>
+    <!-- <script src="./js/scroll.js"></script> -->
     <script src="./js/main.js"></script>
 
 </body>
