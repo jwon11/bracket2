@@ -76,6 +76,7 @@ nav a:active {
 body {
   font-family: "Noto Sans KR", sans-serif;
   max-width: 1920px;
+  width: 100%;
   margin: 0px auto;
 }
 
@@ -434,4 +435,88 @@ figure{
     color: #FFFFFF;
     border-color: #FFFFFF;
     transition: 0.4s;
+}
+
+
+/* 반응형웹 */
+
+@media screen and (max-width: 1280px) {
+  .logo_wrap {
+    left: 231px;
+  }
+
+  .toggle_wrap {
+    right: 140px;
+  }
+
+  .main_header .header_txt,
+  .main_header .button-container {
+    left: 140px;
+  }
+
+  .footer_wrap {
+    left: 83px;
+  }
+  
+  .footer_info_wrap {
+    padding-left: 83px;
+    padding-right: 50px;
+    gap: 60px;
+  }
+
+  /*info*/
+
+  .info_content{
+    display: table; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  .info_article_list{
+    display: block;
+  }
+
+  .info_article_img{
+    max-width: 680px;
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@media screen and (max-width: 1140px) {
+  .main_menu li {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo_wrap {
+    left: 32px;
+  }
+
+  .toggle_wrap {
+    right: 32px;
+  }
+
+  .main_menu li {
+    display: none;
+  }
+
+  .main_header .header_txt,
+  .main_header .button-container {
+    left: 75px;
+  }
+
+  .footer_info_wrap {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /*info*/
+
+  .info_more_button{
+    width: 100px;
+    height: 50px;
+  }
 }
