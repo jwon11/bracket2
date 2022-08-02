@@ -39,14 +39,6 @@ nav a:active {
   color: var(--blue);
 }
 
-.inner_wrap a:hover {
-  color: var(--gray);
-}
-
-.inner_wrap a:active {
-  color: var(--gray);
-}
-
 /* 공통 */
 
 * {
@@ -144,19 +136,6 @@ nav {
   margin-left: 65px;
 }
 
-/* 메뉴 선 */
-
-/* .main_menu li:hover::before {
-  background-color: var(--blue);
-  content: "";
-  display: block;
-  width: 74px;
-  height: 5px;
-  position: absolute;
-  top: 30px;
-  border-radius: 20px;
-} */
-
 /* 선 */
 .nav_wrap::before {
   background-color: var(--white);
@@ -209,6 +188,40 @@ nav {
 
 .menu_inner .menu_slow {
   display: none;
+}
+
+/* 스크롤이벤트 연결*/
+.nav_wrap.add {
+  background-color: var(--white);
+}
+
+.logo_wrap img.add {
+  filter: invert(0%) saturate(100%) hue-rotate(0deg) brightness(100%)
+    contrast(100%);
+}
+
+.toggle_wrap.add {
+  filter: invert(100%);
+}
+
+nav a:link.add,
+nav a:visited.add {
+  color: var(--dark);
+}
+
+nav a:hover.add,
+nav a:active.add {
+  color: var(--blue);
+}
+
+.inner_wrap a:link.add,
+.inner_wrap a:visited.add {
+  color: var(--white);
+}
+
+.inner_wrap a:hover.add,
+.inner_wrap a:active.add {
+  color: var(--gray);
 }
 
 /* -----header----- */
