@@ -48,11 +48,11 @@ nav a:active {
 }
 
 .inner_wrap a:hover {
-  color: var(--blue);
+  color: var(--gray);
 }
 
 .inner_wrap a:active {
-  color: var(--blue);
+  color: var(--gray);
 }
 
 /* 공통 */
