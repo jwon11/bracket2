@@ -39,6 +39,14 @@ nav a:active {
   color: var(--blue);
 }
 
+.inner_wrap a:hover {
+  color: var(--gray);
+}
+
+.inner_wrap a:active {
+  color: var(--gray);
+}
+
 /* 공통 */
 
 * {
