@@ -198,7 +198,8 @@ table .tr5 ul .none pre{
     box-sizing: border-box;
     position: relative;
     top: 154px;
-    left: 180px;
+    left: 620px;
+    margin: 0;
 }
 
 .grid_image {
