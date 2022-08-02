@@ -41,7 +41,7 @@ body{
     opacity: 1;
 }
 .sub_name_font{
-    font: normal normal medium 18px/26px Noto Sans KR;
+    font: normal normal 500 18px/26px Noto Sans KR;
     color: #c8c8c8;
     text-align: left;
     letter-spacing: 0px;
@@ -288,3 +288,37 @@ table .tr5 ul .none pre{
     opacity: 1;
 }
 /***** End map *****/
+
+/* ---------- certification & patent mediaquery start ---------- */
+@media screen and (max-width: 1280px) {
+    .certification_wrap {
+        width: 1280px;
+    }
+    .certification_wrap .name_box {
+        left: 140px;
+    }
+    .image_box {
+        left: 145px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .certification_wrap {
+        width: 768px;
+    }
+    .certification_wrap .name_box {
+        left: 32px;
+    }
+    .image_box {
+        width: 540px;
+        left: 114px;
+    }
+    .grid_image {
+        display: grid;
+        grid-template-columns: 230px 230px;
+        grid-gap: 80px 80px;
+    }
+    .none_768 {
+        display: none;
+    }
+}
+/* ---------- certification & patent mediaquery end ---------- */
