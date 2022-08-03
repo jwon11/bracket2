@@ -5,6 +5,7 @@
     z-index:5;
     font-size: 30px;
     text-align: left;
+    diplay:flex;
     
 }
 .child{
