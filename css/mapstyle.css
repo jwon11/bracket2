@@ -2,32 +2,24 @@
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Noto Sans KR', sans-serif;
 }
 .organization_wrap{
-    font-family: 'Noto Sans KR', sans-serif;
-    top: 0px;
-    left: 0px;
+    position: relative;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    width: 1920px;
+    max-width: 1920px;
     height: 906px;
-    /* height: 6540px; */
-    overflow: hidden;
-    box-sizing: border-box;
+    margin: 0 auto;
 }
 .organization_info_wrap{
-    position: relative;
-    /* top: 2690px; */
+    position: absolute;
     top: 140px;
-    width: 1420px;
-    height: 666px;
+    width: 100%;
 }
 .name_box{
     position: relative;
-    /* top: 2690px;
-    left: 240px; */
     height: 84px;
     opacity: 1;
     padding: 0;
