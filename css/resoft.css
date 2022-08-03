@@ -21,7 +21,7 @@
   --inner-menu: #184c9fdc;
 }
 
-/* a Color */
+/* a Color (색상 변경시 193번째 줄 확인)*/
 
 nav a:link {
   color: var(--white);
@@ -39,12 +39,20 @@ nav a:active {
   color: var(--blue);
 }
 
+.inner_wrap a:link {
+  color: var(--white);
+}
+
+.inner_wrap a:visited {
+  color: var(--white);
+}
+
 .inner_wrap a:hover {
-  color: var(--gray);
+  color: var(--white);
 }
 
 .inner_wrap a:active {
-  color: var(--gray);
+  color: var(--white);
 }
 
 /* 공통 */
@@ -97,12 +105,12 @@ nav {
   max-width: 1920px;
   width: 100%;
   height: 80px;
-  position: fixed;
+  position: absolute;
   z-index: 9999;
 }
 
 .nav_wrap {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 80px;
 }
@@ -163,6 +171,8 @@ nav {
 }
 
 .inner_wrap {
+  position: absolute;
+  top: 80px;
   display: none;
   width: 100%;
   z-index: 9990;
@@ -199,20 +209,8 @@ nav {
 }
 
 /* 스크롤이벤트 연결*/
-.nav_wrap.add {
-  background-color: var(--white);
-}
 
-.logo_wrap img.add {
-  filter: invert(0%) saturate(100%) hue-rotate(0deg) brightness(100%)
-    contrast(100%);
-}
-
-.toggle_wrap.add {
-  filter: invert(100%);
-}
-
-nav a:link.add,
+/* nav a:link.add,
 nav a:visited.add {
   color: var(--dark);
 }
@@ -231,6 +229,19 @@ nav a:active.add {
 .inner_wrap a:active.add {
   color: var(--gray);
 }
+
+.nav_wrap.add {
+  background-color: var(--white);
+}
+
+.logo_wrap img.add {
+  filter: invert(0%) saturate(100%) hue-rotate(0deg) brightness(100%)
+    contrast(100%);
+}
+
+.toggle_wrap.add {
+  filter: invert(100%);
+} */
 
 /* -----header----- */
 
@@ -308,7 +319,7 @@ nav a:active.add {
   position: absolute;
   top: 780px;
   left: 240px;
-  white-space: nowrap; /* 줄바꿈 하지않기 */
+  white-space: nowrap;
   line-height: 0;
   font-size: 0;
 }
