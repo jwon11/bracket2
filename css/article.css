@@ -573,11 +573,13 @@ footer {
   /*article*/
   .article_body {
     display: block;
+    margin: 100px;
     align-content: space-between;
   }
 
   .article_left {
     height: 130px;
+    left: 10%;
   }
 
   .article_index {
