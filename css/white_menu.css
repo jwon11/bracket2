@@ -12,7 +12,6 @@
 
 :root {
   --white: #ffffff;
-  --gray: #cfcfcf;
   --dark: #000000;
   --blue: #184b9f;
   --footer-background: #e9e9e9;
@@ -145,24 +144,59 @@ nav {
   position: absolute;
   right: 380px;
   top: 26px;
-  font-weight: 500;
+  font: normal normal bold 20px/29px Noto Sans KR;
+  letter-spacing: 0px;
 }
 
 .main_menu li {
-  margin-left: 65px;
+  margin-left: 60px;
 }
 
-/* 메뉴 선 */
+/* menu underline hover */
 
-.main_menu li:hover::before {
+.underline {
+  position: relative;
+}
+
+.underline:after {
   background-color: var(--blue);
-  content: "";
-  display: block;
-  width: 74px;
-  height: 5px;
   position: absolute;
-  top: 30px;
-  border-radius: 20px;
+  content: "";
+  left: 0;
+  bottom: 0px;
+  width: 0px;
+  height: 6px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.3s;
+  opacity: 0;
+  border-radius: 5px;
+}
+
+.underline:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+/* 방문한 메뉴 밑줄 고정 */
+
+.visit:after {
+  background-color: var(--blue);
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0px;
+  width: 0px;
+  height: 6px;
+  margin: 5px 0 0;
+  border-radius: 5px;
+  width: 100%;
+  opacity: 1;
+}
+
+.visit a:link,
+.visit a:visited {
+  color: var(--blue);
 }
 
 /* inner */
@@ -186,7 +220,6 @@ nav {
   gap: 40px;
   width: 100%;
   height: 200px;
-  z-index: 9990;
   padding-right: 350px;
   padding-bottom: 10px;
   background-color: var(--inner-menu);
