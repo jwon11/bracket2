@@ -281,7 +281,7 @@ body{
 
 /***** map *****/
 .direction{
-    width: 1920px;
+    max-width: 1920px;
     height: 1344px;
 }
 .direction_wrap{
@@ -380,16 +380,17 @@ body{
 /* ---------- certification & patent mediaquery end ---------- */
 
 
+
 /* ---------- map mediaquery --------*/
 @media screen and (max-width: 1280px) {
+
     .direction_wrap {
+        margin-left:140px;
         width: 1000px;
+        background-color: red;
     }
     .index_kakao_map{
         width: 1000px;
-    }
-    .direction_wrap .name_box {
-        left: 140px;
     }
     .map_info_wrap {
         width: 1000px;
@@ -403,17 +404,20 @@ body{
     .map_info .address_info {
         margin-left: 91px;
     }
+    .under, .under2{
+        width:1000px;
+    }
 }
 
+
 @media screen and (max-width: 768px) {
+    
     .direction_wrap {
+        margin-left: 32px;
         width: 704px;
     }
     .index_kakao_map{
         width: 704px;
-    }
-    .direction_wrap .name_box {
-        left: 32px;
     }
     .map_info_wrap {
         width: 704px;
@@ -432,5 +436,9 @@ body{
         margin-left: 40px;
         width: 550px;
     }
+    .under, .under2{
+        width: 704px;
+    }
 }
+
 /* ---------- end map mediaquery --------*/
