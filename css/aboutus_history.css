@@ -186,7 +186,7 @@ div{
 @media screen and (max-width: 1280px){
 
     .article {
-        margin-left: 140px;
+        margin-left: 80px;
         max-width: 1000px;
     }
     .history .text {
