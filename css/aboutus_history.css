@@ -57,7 +57,7 @@ div{
 
 @media screen and (max-width: 1280px){
     .aboutus {
-        margin: 0 auto;
+        margin-left: 140px;
         max-width: 1000px;
     }
     .about_wrap {
@@ -73,11 +73,11 @@ div{
 
 @media screen and (max-width: 768px){
     .aboutus {
-        margin: 0 auto;
+        margin-left: 32px;
         max-width: 704px;
     }
     .about_wrap {
-        max-width: 704px;
+        max-width: 700px;
     }  
 
     .about_wrap tr th {
@@ -95,7 +95,6 @@ div{
     background-color: #F9F9F9;
     overflow: hidden;
     padding-top: 100px;
-    padding-bottom: 100px;
     font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -186,36 +185,38 @@ div{
 
 @media screen and (max-width: 1280px){
 
-
     .article {
-        margin: 0 auto;
+        margin-left: 140px;
         max-width: 1000px;
     }
-
-    
+    .history .text {
+        margin-left: 140px;
+    }
     .history_li {
         max-width: 620px;
     }
-
     .timeline_li {
         max-width: 620px;
     }
-
-
 
 }
 
     
 @media screen and (max-width: 768px){
-
-
     .article {
-        margin: 0 auto;
+        margin-left: 32px;
         max-width: 704px;
+        word-break: keep-all;
     }
-
+    .history .text {
+        margin-left: 32px;
+    }
     .timeline_li {
         max-width: 400px;
         left: -70px;
+    }
+    .timeline_li ol li{
+        line-height: 30px;
+        height: 90px;
     }
 }
