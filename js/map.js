@@ -26,3 +26,10 @@ marker.setMap(map);
 
 // 나타내기 wow 기능 사용
 new WOW().init();
+
+// 조직도 토글
+$( document ).ready( function() {
+    $( '.name_box' ).click( function() {
+        $( '.organization_toggle' ).fadeToggle(1000);
+    } )
+} );
