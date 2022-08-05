@@ -8,6 +8,8 @@ body{
     margin: 0 auto;
 }
 
+/* ORGANIZATION */
+
 :root {
     --white: #ffffff;
     --dark: #000000;
@@ -42,6 +44,14 @@ body{
     margin: 0;
 }
 
+.mousecursor{
+    cursor: pointer;
+}
+
+.mousecursor:hover{
+    color: var(--blue);
+}
+
 .name_font{
     font: normal normal bold 40px/58px Noto Sans KR;
     color: var(--txtcolor);
@@ -56,13 +66,20 @@ body{
     text-align: left;
     letter-spacing: 0px;
     opacity: 1;
+    text-transform: uppercase;
+}
+
+.organization_toggle{
+    width: 100%;
+    margin-top : 50px;
 }
 
 .organization_info{
-    width: 73%;
+    width: 100%;
     margin-top : 50px;
     height: 532px;
     display: block;
+    margin: 0 auto;
 }
 
 .organization_info_wrap ul, 
@@ -145,6 +162,7 @@ body{
     background-color: var(--dark);
     margin-left: 0px;
     margin-top: -385px;
+    z-index: -1;
 }
 
 .blue_box:after{
@@ -154,17 +172,19 @@ body{
     position: absolute;
     background-color: var(--dark);
     margin-left: -48px;
-    margin-top: 53px
+    margin-top: 53px;
+    z-index: -1;
 }
 
 .wrap_ul:after{
     content: "";
-    width: 1200px;
+    width: 1201px;
     height: 1px;
     position: absolute;
     background-color: var(--dark);
-    margin-left: 3px;
+    margin-left: 0px;
     margin-top: -73px;
+    z-index: -1;
 }
 
 /* 미디어쿼리 */
@@ -178,6 +198,7 @@ body{
 
     .organization_info {
         width: 500px;
+        height: 1250px;
     }
 
     /* 선 */
@@ -212,7 +233,7 @@ body{
 
     /* 칸 조정 */
     .wrap_ul {
-        width: 100%;
+        /* width: 53%; */
         gap: 40px 100px;
         flex-wrap: wrap;
         justify-content: flex-start
