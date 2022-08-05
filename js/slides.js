@@ -40,7 +40,7 @@ function prevNext(num) {
 
   slides[slideIndex - 1].style.display = "block";
 
-  // time = setTimeout(showSlides, 3000);
+  time = setTimeout(showSlides, 3000);
 }
 
 function stopSlide() {
@@ -48,8 +48,6 @@ function stopSlide() {
 }
 
 function playSlide() {
-  time = setTimeout(showSlides, 3000);
-
   for (var i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
@@ -63,6 +61,8 @@ function playSlide() {
   }
 
   slides[slideIndex - 1].style.display = "block";
+
+  time = setTimeout(showSlides, 3000);
 }
 
 // play, stop버튼
@@ -86,11 +86,11 @@ var prevBtn = document.querySelector(".prev");
 var nextBtn = document.querySelector(".next");
 
 prevBtn.addEventListener("click", function () {
-  stopBtn.style.display = "none";
-  playBtn.style.display = "inline-block";
+  playBtn.style.display = "none";
+  stopBtn.style.display = "inline-block";
 });
 
 nextBtn.addEventListener("click", function () {
-  stopBtn.style.display = "none";
-  playBtn.style.display = "inline-block";
+  playBtn.style.display = "none";
+  stopBtn.style.display = "inline-block";
 });
