@@ -429,6 +429,7 @@ figure{
     letter-spacing: 1px;
     color: #1E1E1E;
     opacity: 1;
+    cursor: pointer;
   }
 .info_more button:hover{
     background-color: #184B9F;
