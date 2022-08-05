@@ -171,14 +171,14 @@ body{
     height: 73px;
     position: absolute;
     background-color: var(--dark);
-    margin-left: -48px;
+    margin-left: -47px;
     margin-top: 53px;
     z-index: -1;
 }
 
 .wrap_ul:after{
     content: "";
-    width: 1201px;
+    width: 1200px;
     height: 1px;
     position: absolute;
     background-color: var(--dark);
