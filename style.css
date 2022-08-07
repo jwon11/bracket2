@@ -1,106 +1,122 @@
-.cus_wrap{
-    max-width: 1400px;
-    box-sizing: border-box;
-    display: block;
-    position: relative;
-   
-}
-    .body{
-        max-width: 1400px;
-        margin:0px auto;
-        text-align: center;
-    }
+.left{
+    width: 1920px;
+   }
 
-
-.ecoce-bot{
-    float :right;
-    position: relative;
-    display: block;
-    width: 60%;
-    margin-top:5%;
-    margin-right: 2%;
-
-}
-   
-.ministry-Envrion-img{
-    position :absolute;
-    top: 30%;
-    width:25%;
-    right :2%;
-    
-}
-.ecoce-img-wrap{
-    position: relative;
-    left : 0;
-    width:75%;
-    
-    
-    
-}
-
-.cus_wrap .eco-clean-earth {
-   
-    margin-top: 100px;
-    margin-right: 2%;
-    margin-bottom: 100px;
-    
-}
-    
-   
-
-.img_btn{
-    position:relative;
-    height:100%;
-    max-width :1400px;
-    margin: 0 auto;
-
-}
-
-.box_wrap{
-    display: block;
-    height: 250px;
-    width:100%;
-    background-color: navy;
-    overflow: hidden;
+.ecoce{
+     position: absolute;
+     top:50%;
+     left:20%;
     
     }
-.cus_wrap .eco-clean-earth .text1 {
-   font-size: 40px;
-   font-weight: 600;
-   text-align: right;
+
+  
+.text3{
+    font-weight: bold;
+    font-size :30px
 }
-.cus_wrap .eco-clean-earth .text2{ 
-    font-size: 30px;
-    font-weight: 400px;
-    text-align: right;
+.text{
+    background-color: black;
+    color:white;
+    width:200px;
+    height: 50px;
+    border-radius: 69px;
+    font-size: 1.125rem;
+    text-align: center;
+    left:5%
+}
+.text2{
+    background-color: black;
+    color: white;
+    width:200px;
+    height: 50px;
+    border-radius: 69px;
+    font-size: 1.125rem;
+    left:5%;
+    text-align: center;
+    
+}
+.text4{
+     font-family: 'Noto Sans KR Medium';
+}
+.left2{
+    position:absolute;
+    top:40%;
+    left:10%;
+    justify-content: space-between;
+    display: flex;
+    
+}
+.right1{
+    position: absolute;
+    left:60%;
+    top:50%;
+    font-size: 40px;
+    font-weight: 30px;
+    justify-content: space-between;
 
 }
 
- @media screen and (max-width:940px){
-    .ministry-Envrion-img {
-        display: none;
-    }  
-        
-    .ecoce-bot{
-        float:left;
-        width:70%;
-        margin-left: 20px;
-    }
+.right{
+    position:absolute;
+    top:50%;
+    left:60%;
+    justify-content: space-between;
 }
-  .ecoce-img-wrap{
-    width:90%;
-    margin:3%;
-  }
-  .cus_wrap.eco-clean-earth{
-    margin-right: 5%;
-    margin-top: 0px;
-  }
-  .cus_wrap.eco-clean-earth.text1{
-    font-size: 30px;
-  }
-  .cus_wrap.eco-clean-earth.text2{
-    font-size: 25px;
-  }
-  .logo1{
-    margin-top: 50px;
-  }
+.btn1{
+    position: absolute;
+    background-color: black;
+    color:white;
+    font-weight: 500;
+    font-size: 1.125rem;
+    width:188px;
+    height: 50px;
+    border-radius: 69px;
+    top:130%;
+    left:80%;
+}
+.btn2{
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 1.125rem;
+    width: 180px;
+    height:50px ;
+    border-radius:69px ;
+    top:300px;
+}
+.button{
+    background-color: black;
+    color:white;
+    font-weight: 500;
+    font-size: 1.125rem;
+    width: 188px;
+    height: 57px;
+}
+.child{
+    top:40%;
+}
+
+
+.body{
+    z-index: 2;
+    position: absolute;
+    top :20%;
+    left: 5%;
+    width: 475px;
+    height: 687px;
+    font-size: 40px;
+    font-weight: 30px;
+    text-align: center;
+    display: flex;
+}
+
+ 
+
+
+
+
+
+
+
+
+
