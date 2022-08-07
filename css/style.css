@@ -1,42 +1,131 @@
-.parent{
-    position: relative;
-    top: 40%;
-    height: 592px;
-    z-index:5;
-    font-size: 30px;
-    text-align: left;
-    diplay:flex;
+.left{
+    width: 1920px;
+   }
+
+.ecoce{
+     position: absolute;
+     top:50%;
+     left:20%;
+    
+    }
+
+  
+.text3{
+    font-weight: bold;
+    font-size :30px
+}
+.text{
+    background-color: black;
+    color:white;
+    width:200px;
+    height: 50px;
+    border-radius: 69px;
+    font-size: 1.125rem;
+    text-align: center;
+    left:5%
+}
+.text2{
+    background-color: black;
+    color: white;
+    width:200px;
+    height: 50px;
+    border-radius: 69px;
+    font-size: 1.125rem;
+    left:5%;
+    text-align: center;
     
 }
+.left1{
+     font-family: 'Noto Sans KR Medium';
+     font-size: 40px;
+     font-weight: bold;
+     color:black
+}
+
+.flex{
+    color:#c8c8c8;
+    font-size:30px;
+}
+.left2{
+    position:absolute;
+    top:40%;
+    left:5%;
+    justify-content: space-between;
+    display: flex;
+    
+}
+.right1{
+    position: absolute;
+    left:60%;
+    top:50%;
+    font-size: 40px;
+    font-weight: 30px;
+    justify-content: space-between;
+
+}
+
+.right2{
+    position:absolute;
+    top:50%;
+    left:60%;
+    justify-content: space-between;
+    display: flex;
+}
+.btn1{
+    position: absolute;
+    background-color: black;
+    color:white;
+    font-weight: 500;
+    font-size: 1.125rem;
+    width:188px;
+    height: 50px;
+    border-radius: 69px;
+    top:130%;
+    left:80%;
+}
+.btn2{
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 1.125rem;
+    width: 180px;
+    height:50px ;
+    border-radius:69px ;
+    top:300px;
+}
+.button{
+    background-color: black;
+    color:white;
+    font-weight: 500;
+    font-size: 1.125rem;
+    width: 188px;
+    height: 57px;
+}
 .child{
+    top:40%;
+}
+
+
+.body{
     z-index: 2;
     position: absolute;
     top :20%;
-    left:20%;
+    left: 5%;
     width: 475px;
     height: 687px;
     font-size: 40px;
     font-weight: 30px;
     text-align: center;
+    display: flex;
 }
 
-  .ecoce_img{
-    position: absolute;
-    top :70%;
-    left: 80%;
-    text-align: right;
-    font-size: 30px;
-    font-weight: 40px;
-}
-.logo1{
-    top:150%;
-    background-color: black;
-    border-radius: 5px;
-    background-size: 25%;
-    font-style: white;
-    width: 70px;
-    position:absolute;
-    left:70%;
-   
-    
-}
+ 
+
+
+
+
+
+
+
+
+
