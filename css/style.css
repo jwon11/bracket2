@@ -8,7 +8,7 @@
    }
 .ecoce{
      position: absolute;
-     top:25%;
+     top:40%;
      left:20%;
     
     }
@@ -63,7 +63,7 @@
 .right1{
     position: absolute;
     left:65%;
-    top:20%;
+    top:40%;
     font-size: 30px;
     font-weight: bold;
     justify-content: space-between;
@@ -73,7 +73,7 @@
 
 .right2{
     position:absolute;
-    top:50%;
+    top:70%;
     left:60%;
     justify-content: space-between;
     display: flex;
