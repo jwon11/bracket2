@@ -361,10 +361,12 @@ body{
 .under{
     border-bottom: 1px solid #dbdbdb;
     opacity: 1;
+    padding-bottom: 20px;
 }
 .under2{
     border-bottom: 1px solid #1e1e1e;
     opacity: 1;
+    padding-bottom: 20px;
 }
 /***** End map *****/
 
