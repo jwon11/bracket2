@@ -63,7 +63,7 @@
 .right1{
     position: absolute;
     left:65%;
-    top:40%;
+    top:45%;
     font-size: 30px;
     font-weight: bold;
     justify-content: space-between;
@@ -73,8 +73,8 @@
 
 .right2{
     position:absolute;
-    top:70%;
-    left:60%;
+    top:60%;
+    left:70%;
     justify-content: space-between;
     display: flex;
 }
