@@ -273,7 +273,8 @@ body{
     height: 1120px;
     box-sizing: border-box;
     position: relative;
-    top: 154px;
+    top: 50px;
+    bottom: 100px;
     left: 620px;
     margin: 0;
 }
