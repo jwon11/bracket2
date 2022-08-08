@@ -2,9 +2,13 @@
     width: 1920px;
    }
 
+
+.child{
+    top: 20%;
+   }
 .ecoce{
      position: absolute;
-     top:50%;
+     top:25%;
      left:20%;
     
     }
@@ -44,7 +48,9 @@
 
 .flex{
     color:#c8c8c8;
-    font-size:30px;
+    font-size:18px;
+    font-weight: bold;
+    top:5%;
 }
 .left2{
     position:absolute;
@@ -56,11 +62,12 @@
 }
 .right1{
     position: absolute;
-    left:60%;
-    top:50%;
-    font-size: 40px;
-    font-weight: 30px;
+    left:65%;
+    top:20%;
+    font-size: 30px;
+    font-weight: bold;
     justify-content: space-between;
+    text-align: right;
 
 }
 
@@ -70,6 +77,16 @@
     left:60%;
     justify-content: space-between;
     display: flex;
+}
+.right3{
+    top:80%;
+}
+.eco{
+    font-size:22px;
+    font-weight: bold;
+    position: absolute;
+    top:90%;
+    left: 60%;
 }
 .btn1{
     position: absolute;
