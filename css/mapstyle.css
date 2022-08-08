@@ -264,8 +264,6 @@ body{
     flex-direction: column;
 }
 .certification_wrap .name_box{
-    width: 219px !important;
-    left: 240px;
     top: 100px;
 }
 
