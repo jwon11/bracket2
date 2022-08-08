@@ -300,37 +300,6 @@ footer {
 
 /*info*/
 
-.info{
-    max-width: 100%;
-    width: 100%;
-    position: relative;
-}
-
-.info_header{
-    max-width: 1920px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    overflow: hidden;
-    position: relative;
-}
-
-.info_header_img{
-	width: 100%;
-	vertical-align: middle;
-}
-
-.info_title{
-    font: normal normal bold 40px/58px Noto Sans KR;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-    padding: 5px 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate( -50%, -50% );
-}
-
 .info_body{
     margin: 100px auto;
     max-width: 1440px;
