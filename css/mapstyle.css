@@ -264,7 +264,7 @@ body{
     flex-direction: column;
 }
 .certification_wrap .name_box{
-    top: 100px;
+    margin: 100px auto 0 auto;
 }
 
 /* image_box */
@@ -279,6 +279,7 @@ body{
 }
 
 .grid_image {
+    width: 980px;
     display: grid;
     grid-template-columns: 230px 230px 230px;
     grid-gap: 80px 150px;
