@@ -469,8 +469,7 @@ figure{
 
   .info_content{
     display: table; 
-    margin-left: auto; 
-    margin-right: auto;
+    margin: 0 auto;
   }
 
   .info_article_list{
