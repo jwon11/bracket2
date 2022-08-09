@@ -2,7 +2,7 @@
     position: relative;
     top: 161px;
     left:0px;
-    width: 1920px;
+    max-width:1440px;
     height: 820px;
     background:transparent linear-gradient(223deg, #E4CDE8 0%,#339BE133 100%) 0% 0% no-repeat padding-box;
     font-size: 40px;
@@ -10,12 +10,206 @@
     padding: 30px;
     border: 0;
     box-sizing: border-box;
-}  
+    background-size: contain;
+    width: 100%;
+
+      
+    
+    
+    position: relative;
+    overflow: hidden;
+    background-size: 100%;
+    background-clip: padding-box;
+}
+     
+
+
+      .b{
+          width: 100%;
+          height: 400px;
+          background: rgb(228,205,232);
+          background: linear-gradient(0deg,rgba(228,205,232,1)0%,
+                                         rgba(225,255,255,1)100%);
+          background-size: 100%;   
+          background-clip: border-box;                              
+      }
+      .c{
+         width: 600px;
+         height: 600px;
+         background: rgb(228,205,232)  #ffffff;
+         background: radial-gradient(circle,#339be133 0%,rgba(255,255,255,0)70%);
+         z-index: 9;
+         position: absolute;
+         top:160px;
+         left:-250px;
+         background-size: 100%; 
+         background-clip: border-box;
+      }
+      .d{
+          width: 600px;
+          height: 600px;
+          background: rgb(225,255,255,);
+          background: radial-gradient(
+              circle,
+              rgba(255,255,255,1)0%,#ffffff
+              rgba(255,255,255,0)80%);
+              position: absolute;
+              top:0px;
+              left: 200px;
+              background-clip: border-box;
+            }
+.eco{
+    font-family: 'Noto Sans KR Medium';
+    color: #c8c8c8;
+    font-size: 18px;
+
+
+}
+
+.btn{
+    background-color: black;
+    color:white;
+    width:200px;
+    height: 57px;
+    border-radius: 69px;
+    font-size: 1.125rem;
+    text-align: center;
+    position: absolute;
+    left:75%;
+    width:153px;
+}
+
+
+  .moadu{
+    position: absolute;
+    top:20%;
+    font-size:30px;
+    font-family: 'Noto Sans KR';
+    font-weight: bold;
+  }
+
+  .phone{
+    position: absolute;
+    left:10%;
+  }
+.font{
+    font-family: 'Noto Sans KR';
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+  .h{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    background-size: 100%;
+    background-clip: padding-box;
+} 
+.a{
+    width: 100%;
+    height: 300px;
+    background: #ffffff;
+    background-clip:border-box;
+}
+.b{
+    width: 100%;
+    height: 400px;
+    background: rgb(228,205,232);
+    background: linear-gradient(0deg,rgba(228,205,232,1)0%,
+                                   rgba(225,255,255,1)100%);
+    background-size: 100%;   
+    background-clip: border-box;                              
+}
+.c{
+   width: 600px;
+   height: 600px;
+   background: rgb(228,205,232)  #ffffff;
+   background: radial-gradient(circle,#339be133 0%,rgba(255,255,255,0)70%);
+   z-index: 9;
+   position: absolute;
+   top:160px;
+   left:-250px;
+   background-size: 100%; 
+   background-clip: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
     @media  (max-width: 900px) {
         
     }
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.font{
+    font:'Noto Sans KR,Bold'
     
+    
+}
+        
+.eco{
+    font-size: 20px;
+    color: #c8c8c8;
+    width: 62px;
+    height: 26px;
+}
     
    
 .body{
@@ -26,15 +220,15 @@
 
 .phone{
     position :absolute;
-   
-    left: 550px;
+    top: 50%;
+    left: 40%;
     width:680px;
     height: 482px;
    
 }
 .moadu{
     position: absolute;
-   
+    top:30%;
     left:60%;
     font-size: 30px;
     text-align: right;
