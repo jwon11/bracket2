@@ -54,6 +54,11 @@ for(let i = 0; i < content_behinds.length; i++) {
 }
 // resoft service 변수 선언 끝
 
+const scaleDefault = 'scale(1.0)'; // 이미지 기본 크기
+const scaleBig = 'scale(1.3)'; // news, project 이미지 mouseover시 크기
+const scaleMedium = 'scale(1.2)'; // service 이미지 mouseover시 크기
+const displayDefault = 'none';
+const displayOver = 'table';
 // 변수 선언 끝
 
 
@@ -64,14 +69,14 @@ const content_function = function() {
     for(let i = 0; i < 4; i++) {
         content[i].addEventListener('mouseover', (e) => {
             e.preventDefault();
-            content_img[i].style.transform = 'scale(1.3)';
+            content_img[i].style.transform = scaleBig;
             content_img[i].style.transitionDuration = '0.5s';
             content_p[i].style.color = '#0064CD';
         });
         
         content[i].addEventListener('mouseout', (e) => {
             e.preventDefault;
-            content_img[i].style.transform = 'scale(1.0)';
+            content_img[i].style.transform = scaleDefault;
             content_p[i].style.color = '#1E1E1E';
         });
     }
@@ -81,14 +86,14 @@ const content_function = function() {
 const proj_ecoce_function = function() {
     proj_ecoce.addEventListener('mouseover', (e) => {
         e.preventDefault();
-        ecoce_word.style.display = 'table';
-        ecoce_img.style.transform = 'scale(1.3)';
+        ecoce_word.style.display = displayOver;
+        ecoce_img.style.transform = scaleBig;
     });
 
     proj_ecoce.addEventListener('mouseout', (e) => {
         e.preventDefault();
-        ecoce_word.style.display = 'none';
-        ecoce_img.style.transform = 'scale(1.0)';
+        ecoce_word.style.display = displayDefault;
+        ecoce_img.style.transform = scaleDefault;
     });
 }
 
@@ -96,14 +101,14 @@ const proj_ecoce_function = function() {
 const proj_moado_function = function() {
     proj_moado.addEventListener('mouseover', (e) => {
         e.preventDefault();
-        moado_word.style.display = 'table';
-        moado_img.style.transform = 'scale(1.3)';
+        moado_word.style.display = displayOver;
+        moado_img.style.transform = scaleBig;
     });
 
     proj_moado.addEventListener('mouseout', (e) => {
         e.preventDefault();
-        moado_word.style.display = 'none';
-        moado_img.style.transform = 'scale(1.0)';
+        moado_word.style.display = displayDefault;
+        moado_img.style.transform = scaleDefault;
     });
 }
 
@@ -111,58 +116,58 @@ const proj_moado_function = function() {
 const serv_function = function() {
     serv_app.addEventListener('mouseover', (e) => {
         e.preventDefault();
-        serv_content_img[0].style.transform = 'scale(1.2)';
-        content_front[0].style.display = 'none';
-        content_behind[0].style.display = 'table';
+        serv_content_img[0].style.transform = scaleMedium;
+        content_front[0].style.display = displayDefault;
+        content_behind[0].style.display = displayOver;
     });
 
     serv_app.addEventListener('mouseout', (e) => {
         e.preventDefault();
-        serv_content_img[0].style.transform = 'scale(1.0)';
-        content_front[0].style.display = 'table';
-        content_behind[0].style.display = 'none';
+        serv_content_img[0].style.transform = scaleDefault;
+        content_front[0].style.display = displayOver;
+        content_behind[0].style.display = displayDefault;
     });
 
     serv_web.addEventListener('mouseover', (e) => {
         e.preventDefault();
-        serv_content_img[1].style.transform = 'scale(1.2)';
-        content_front[1].style.display = 'none';
-        content_behind[1].style.display = 'table';
+        serv_content_img[1].style.transform = scaleMedium;
+        content_front[1].style.display = displayDefault;
+        content_behind[1].style.display = displayOver;
     });
 
     serv_web.addEventListener('mouseout', (e) => {
         e.preventDefault();
-        serv_content_img[1].style.transform = 'scale(1.0)';
-        content_front[1].style.display = 'table';
-        content_behind[1].style.display = 'none';
+        serv_content_img[1].style.transform = scaleDefault;
+        content_front[1].style.display = displayOver;
+        content_behind[1].style.display = displayDefault;
     });
 
     serv_ai.addEventListener('mouseover', (e) => {
         e.preventDefault();
-        serv_content_img[2].style.transform = 'scale(1.2)';
-        content_front[2].style.display = 'none';
-        content_behind[2].style.display = 'table';
+        serv_content_img[2].style.transform = scaleMedium;
+        content_front[2].style.display = displayDefault;
+        content_behind[2].style.display = displayOver;
     });
 
     serv_ai.addEventListener('mouseout', (e) => {
         e.preventDefault();
-        serv_content_img[2].style.transform = 'scale(1.0)';
-        content_front[2].style.display = 'table';
-        content_behind[2].style.display = 'none';
+        serv_content_img[2].style.transform = scaleDefault;
+        content_front[2].style.display = displayOver;
+        content_behind[2].style.display = displayDefault;
     });
 
     serv_xr.addEventListener('mouseover', (e) => {
         e.preventDefault();
-        serv_content_img[3].style.transform = 'scale(1.2)';
-        content_front[3].style.display = 'none';
-        content_behind[3].style.display = 'table';
+        serv_content_img[3].style.transform = scaleMedium;
+        content_front[3].style.display = displayDefault;
+        content_behind[3].style.display = displayOver;
     });
 
     serv_xr.addEventListener('mouseout', (e) => {
         e.preventDefault();
-        serv_content_img[3].style.transform = 'scale(1.0)';
-        content_front[3].style.display = 'table';
-        content_behind[3].style.display = 'none';
+        serv_content_img[3].style.transform = scaleDefault;
+        content_front[3].style.display = displayOver;
+        content_behind[3].style.display = displayDefault;
     });
 }
 // 함수 선언 끝
