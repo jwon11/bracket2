@@ -1,71 +1,56 @@
 // 헤더 캐러셀
 
-var slides = document.getElementsByClassName("cell");
+var slideWrapper = document.querySelector(".container");
+var slides = document.querySelectorAll(".cell li"); // img
+var totalSlides = slides.length; // img 갯수
 
-var slideIndex = 0;
-var time;
+var sliderWidth = slideWrapper.clientWidth; // container width 1920px
+var slideIndex = 2; // 마지막 사진 넘버
+var slider = document.querySelector(".cell");
+
+slider.style.width = sliderWidth * totalSlides + "px"; // 이미지 모두 붙인 넓이 지정
 
 showSlides();
+
+// auto
 function showSlides() {
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  slideIndex++; // 1 증가 ( 3으로 시작되면서 0번으로 돌아가고 첫번째 이미지 출력)
+  // console.log(slideIndex + "번 이미지 auto"); // 출력 3(0), 1, 2
+  if (slideIndex == -1) {
+    slideIndex = totalSlides - 1;
+  } else if (slideIndex === totalSlides) {
+    slideIndex = 0; // img 갯수 도달하면 첫번째로 돌아감
   }
-
-  slideIndex++;
-
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-
-  slides[slideIndex - 1].style.display = "block";
-
+  slider.style.left = -(sliderWidth * slideIndex) + "px"; // 가로배열
   time = setTimeout(showSlides, 3000);
 }
+
+// prevNext
 
 function prevNext(num) {
   stopSlide();
   slideIndex += num;
-
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  // console.log(slideIndex + "번 이미지 버튼"); // 출력 3(0), 1, 2
+  if (slideIndex == -1) {
+    slideIndex = totalSlides - 1;
+  } else if (slideIndex === totalSlides) {
+    slideIndex = 0;
   }
-
-  if (slideIndex < 1) {
-    slideIndex = slides.length;
-  }
-
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-
-  slides[slideIndex - 1].style.display = "block";
-
+  slider.style.left = -(sliderWidth * slideIndex) + "px"; // 가로배열
   time = setTimeout(showSlides, 3000);
 }
+
+// play stop
 
 function stopSlide() {
   clearTimeout(time);
 }
 
 function playSlide() {
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-
-  if (slideIndex < 1) {
-    slideIndex = slides.length;
-  }
-
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-
-  slides[slideIndex - 1].style.display = "block";
-
   time = setTimeout(showSlides, 3000);
 }
 
-// play, stop버튼
+// 버튼 play, stop
 
 var stopBtn = document.querySelector(".stop");
 var playBtn = document.querySelector(".play");
