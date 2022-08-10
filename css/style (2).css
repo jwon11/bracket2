@@ -113,3 +113,78 @@
    
     left:63px;
 }
+
+
+
+.image{
+    position: relative;
+    top: 161px;
+    left:0px;
+    max-width:1440px;
+    height: 820px;
+    background:transparent linear-gradient(223deg, #E4CDE8 0%,#339BE133 100%) 0% 0% no-repeat padding-box;
+    font-size: 40px;
+    margin: 10px;
+    padding: 30px;
+    border: 0;
+    box-sizing: border-box;
+    background-size: contain;
+    width: 100%;
+
+      
+    
+    
+    position: relative;
+    overflow: hidden;
+    background-size: 100%;
+    background-clip: padding-box;
+}
+     
+
+
+      
+.eco{
+    font-family: 'Noto Sans KR Medium';
+    color: #c8c8c8;
+    font-size: 18px;
+
+
+}
+
+.btn{
+    background-color: black;
+    color:white;
+    width:200px;
+    height: 57px;
+    border-radius: 69px;
+    font-size: 1.125rem;
+    text-align: center;
+    position: absolute;
+    left:75%;
+    width:153px;
+}
+
+
+  .moadu{
+    position: absolute;
+    top:20%;
+    font-size:30px;
+    font-family: 'Noto Sans KR';
+    font-weight: bold;
+  }
+
+  .phone{
+    position: absolute;
+    left:10%;
+  }
+.font{
+    font-family: 'Noto Sans KR';
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+
+
+
+
