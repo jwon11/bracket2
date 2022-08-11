@@ -375,6 +375,13 @@ body{
     .certification_wrap .name_box {
 	width: 219px;
         left: 140px;
+	margin: 100px 0 0 0;
+    }
+    .certification_wrap .name_box .name_font {
+	width: 219px;
+    }
+    .certification_wrap .name_box .sub_name_font {
+	width: 219px;
     }
     .image_box {
         left: 145px;
@@ -384,6 +391,13 @@ body{
     .certification_wrap .name_box {
 	width: 219px;
         left: 32px;
+	margin: 100px 0 0 0;
+    }
+    .certification_wrap .name_box .name_font {
+	width: 219px;
+    }
+    .certification_wrap .name_box .sub_name_font {
+	width: 219px;
     }
     .image_box {
         width: 540px;
