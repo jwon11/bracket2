@@ -114,7 +114,7 @@ div{
 }
 
 .article .year p:last-child {
-    line-height: 215px;
+    line-height: 240px;
 }
 
 
@@ -218,5 +218,8 @@ div{
     .timeline_li ol li{
         line-height: 30px;
         height: 90px;
+    }
+    .article .year p:last-child {
+        line-height: 340px;
     }
 }
