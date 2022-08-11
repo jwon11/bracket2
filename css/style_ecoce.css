@@ -99,7 +99,7 @@
 
     .ecoce {
         max-width: 1000px;
-        margin: 0 auto;
+        margin: 100px auto;
     }
     .ecoce_wrap {
         flex-direction: column;
