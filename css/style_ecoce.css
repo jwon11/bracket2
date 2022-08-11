@@ -96,11 +96,25 @@
 
 
 @media screen and (max-width: 1280px){
+
+    .ecoce {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .ecoce_wrap {
+        flex-direction: column;
+    }
+    .ecoce_wrap .right {
+        margin-top: 250px;
+    }
+    .right .ecoce_text {
+        padding-bottom: 40px;
+    }
+    }
     
-}
 
 @media screen and (max-width: 768px){
- 
+
     .ecoce_image .app img {
         width: 600px;
     }
@@ -114,15 +128,8 @@
         margin: 0 32px;
         flex-direction: column;
     }
-    .ecoce_wrap .right {
-        margin-top: 250px;
-    }
-    .right .ecoce_text {
-        padding-bottom: 40px;
-    }
+
 }
-
-
 
 
 
@@ -183,7 +190,30 @@
 
 
 @media screen and (max-width: 1280px){
-
+    .moado {
+        height:1350px;
+    }
+    .moado_content {
+        max-width:1000px;
+        margin: 0 auto;
+    }
+    .moado_wrap {
+        flex-direction: column;
+    }
+    .moado_wrap .right {
+        margin-top:220px;
+        text-align: left;
+        margin-left:50px;
+    }
+    .moado_image .phone{
+        left:350px;
+    }
+    .moado_btn {
+        float: left;
+    }
+    .btn2 {
+        margin-left: 0px;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -209,17 +239,7 @@
         width: 580px;    
     }
     
-    .moado_wrap .right {
-        margin-top:220px;
-        text-align: left;
-        margin-left:50px;
-    }
-    .moado_btn {
-        float: left;
-    }
-    .btn2 {
-        margin-left: 0px;
-    }
+
 }
 
 
@@ -251,6 +271,17 @@
 
 
 @media screen and (max-width: 1280px){
+    .etc {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .etc_wrap {
+        flex-wrap: wrap;
+        justify-content:center;
+    } 
+    .etc_app {
+        margin: 20px;
+    }
 
 }
 
