@@ -372,10 +372,8 @@ body{
 
 /* ---------- certification & patent mediaquery start ---------- */
 @media screen and (max-width: 1280px) {
-    .certification_wrap {
-        width: 1280px;
-    }
     .certification_wrap .name_box {
+	width: 219px;
         left: 140px;
     }
     .image_box {
@@ -383,10 +381,8 @@ body{
     }
 }
 @media screen and (max-width: 768px) {
-    .certification_wrap {
-        width: 768px;
-    }
     .certification_wrap .name_box {
+	width: 219px;
         left: 32px;
     }
     .image_box {
