@@ -115,7 +115,10 @@
         flex-direction: column;
     }
     .ecoce_wrap .right {
-        margin-top:200px;
+        margin-top: 250px;
+    }
+    .right .ecoce_text {
+        padding-bottom: 40px;
     }
 }
 
@@ -188,7 +191,7 @@
         margin-left: 32px;
     }
     .moado {
-        height:1300px;
+        height:1250px;
     }
     .moado_wrap {
         margin: 0 32px;
@@ -196,22 +199,28 @@
     }
 
     .moado_image .app img {
-        width: 700px;
+        width: 680px;
     }
     .moado_image .phone{
         top:100px;
         left:100px;
     }
     .moado_image .phone img {
-        width: 600px;    
+        width: 580px;    
     }
     
     .moado_wrap .right {
-        margin-top:200px;
+        margin-top:220px;
+        text-align: left;
+        margin-left:50px;
     }
-
+    .moado_btn {
+        float: left;
+    }
+    .btn2 {
+        margin-left: 0px;
+    }
 }
-
 
 
 
@@ -246,7 +255,13 @@
 }
 
 @media screen and (max-width: 768px){
-    
-}
+    .etc_wrap {
+        flex-wrap: wrap;
+        justify-content:center;
+    } 
+    .etc_app {
+        margin: 20px;
+    }
+}  
 
 
