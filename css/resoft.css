@@ -104,12 +104,12 @@ nav {
   max-width: 1920px;
   width: 100%;
   height: 80px;
-  position: absolute;
+  position: fixed;
   z-index: 9999;
 }
 
 .nav_wrap {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 80px;
 }
@@ -206,6 +206,66 @@ nav {
 
 .menu_inner .menu_slow {
   display: none;
+}
+
+/* menu underline hover */
+
+.underline {
+  position: relative;
+}
+
+.underline:after {
+  background-color: var(--blue);
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0px;
+  width: 0px;
+  height: 6px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.3s;
+  opacity: 0;
+  border-radius: 5px;
+}
+
+.underline:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+
+/* 스크롤이벤트 연결*/
+.nav_wrap.add {
+  background-color: var(--white);
+}
+
+.logo_wrap img.add {
+  filter: invert(0%) saturate(100%) hue-rotate(0deg) brightness(100%)
+    contrast(100%);
+}
+
+.toggle_wrap.add {
+  filter: invert(100%);
+}
+
+nav a:link.add,
+nav a:visited.add {
+  color: var(--dark);
+}
+
+nav a:hover.add,
+nav a:active.add {
+  color: var(--blue);
+}
+
+.inner_wrap a:link.add,
+.inner_wrap a:visited.add {
+  color: var(--white);
+}
+
+.inner_wrap a:hover.add,
+.inner_wrap a:active.add {
+  color: var(--white);
 }
 
 /* -----header----- */
