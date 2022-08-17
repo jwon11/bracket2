@@ -18,6 +18,8 @@ toggle.addEventListener("click", function () {
 $(function(){
   $(".info_more").click(function(){
     $(".info_article").fadeIn(1000);
-    $(".info_more").hide();
+    if($('.info_article:nth-child(n+7)').css('display')!=='none'){ 
+      $(".info_more").hide(); 
+    }
   })
 })
