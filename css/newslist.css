@@ -78,10 +78,15 @@ figure{
     -webkit-transition: .6s ease-in-out;
     transition: .6s ease-in-out;
 }
-.info_article figure:hover img{
+.info_article:hover img{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
+    filter: brightness(60%); 
 }
+.info_article:hover .info_article_title{
+    color: #184B9F;
+}
+
 
 .info_article_date{
     text-align: left;
