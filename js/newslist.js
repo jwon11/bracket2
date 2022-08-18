@@ -18,8 +18,8 @@ toggle.addEventListener("click", function () {
 $(function(){
   $(".info_more").click(function(){
     $(".info_article").fadeIn(1000);
-    if($('.info_article:nth-child(n+7)').css('display')!=='none'){ 
-      $(".info_more").hide(); 
+    if($('.info_article:nth-last-child(1)').css('display')!=='none'){ //만약 마지막 기사가 display:none이 아니라면
+      $(".info_more").hide(); //더보기 버튼을 감춘다
     }
   })
 })
