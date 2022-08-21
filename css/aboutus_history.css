@@ -61,12 +61,12 @@ div{
         max-width: 1000px;
     }
     .about_wrap {
-        max-width: 1000px;
+        width: 1000px;
         
     }
 
     .about_wrap tr th {
-        column-width: 200px;
+        column-width: 150px;
     }
 }
 
@@ -81,7 +81,7 @@ div{
     }  
 
     .about_wrap tr th {
-        column-width: 180px;
+        column-width: 150px;
     }
 }
 
