@@ -41,6 +41,12 @@ for(let i = 0; i < serv_content_imgs.length; i++) {
     serv_content_img.push(serv_content_imgs[i]);
 }
 
+const back_colors = document.querySelectorAll('.back_color');
+const back_color = [];
+for(let i = 0; i < back_colors.length; i++) {
+    back_color.push(back_colors[i]);
+}
+
 const content_fronts = document.querySelectorAll('.content_front');
 const content_front = [];
 for(let i = 0; i < content_fronts.length; i++) {
@@ -59,6 +65,7 @@ const scaleBig = 'scale(1.3)'; // news, project 이미지 mouseover시 크기
 const scaleMedium = 'scale(1.2)'; // service 이미지 mouseover시 크기
 const displayDefault = 'none';
 const displayOver = 'table';
+const transDuration = '0.5s';
 // 변수 선언 끝
 
 
@@ -70,7 +77,7 @@ const content_function = function() {
         content[i].addEventListener('mouseover', (e) => {
             e.preventDefault();
             content_img[i].style.transform = scaleBig;
-            content_img[i].style.transitionDuration = '0.5s';
+            content_img[i].style.transitionDuration = transDuration;
             content_p[i].style.color = '#0064CD';
         });
         
@@ -87,6 +94,7 @@ const proj_ecoce_function = function() {
     proj_ecoce.addEventListener('mouseover', (e) => {
         e.preventDefault();
         ecoce_word.style.display = displayOver;
+        ecoce_img.style.transitionDuration = transDuration;
         ecoce_img.style.transform = scaleBig;
     });
 
@@ -102,6 +110,7 @@ const proj_moado_function = function() {
     proj_moado.addEventListener('mouseover', (e) => {
         e.preventDefault();
         moado_word.style.display = displayOver;
+        moado_img.style.transitionDuration = transDuration;
         moado_img.style.transform = scaleBig;
     });
 
@@ -117,6 +126,9 @@ const serv_function = function() {
     serv_app.addEventListener('mouseover', (e) => {
         e.preventDefault();
         serv_content_img[0].style.transform = scaleMedium;
+        serv_content_img[0].style.transitionDuration = transDuration;
+        back_color[0].style.transform = scaleMedium;
+        back_color[0].style.transitionDuration = transDuration;
         content_front[0].style.display = displayDefault;
         content_behind[0].style.display = displayOver;
     });
@@ -124,6 +136,7 @@ const serv_function = function() {
     serv_app.addEventListener('mouseout', (e) => {
         e.preventDefault();
         serv_content_img[0].style.transform = scaleDefault;
+        back_color[0].style.transform = scaleDefault;
         content_front[0].style.display = displayOver;
         content_behind[0].style.display = displayDefault;
     });
@@ -131,6 +144,9 @@ const serv_function = function() {
     serv_web.addEventListener('mouseover', (e) => {
         e.preventDefault();
         serv_content_img[1].style.transform = scaleMedium;
+        serv_content_img[1].style.transitionDuration = transDuration;
+        back_color[1].style.transform = scaleMedium;
+        back_color[1].style.transitionDuration = transDuration;
         content_front[1].style.display = displayDefault;
         content_behind[1].style.display = displayOver;
     });
@@ -138,6 +154,7 @@ const serv_function = function() {
     serv_web.addEventListener('mouseout', (e) => {
         e.preventDefault();
         serv_content_img[1].style.transform = scaleDefault;
+        back_color[1].style.transform = scaleDefault;
         content_front[1].style.display = displayOver;
         content_behind[1].style.display = displayDefault;
     });
@@ -145,6 +162,9 @@ const serv_function = function() {
     serv_ai.addEventListener('mouseover', (e) => {
         e.preventDefault();
         serv_content_img[2].style.transform = scaleMedium;
+        serv_content_img[2].style.transitionDuration = transDuration;
+        back_color[2].style.transform = scaleMedium;
+        back_color[2].style.transitionDuration = transDuration;
         content_front[2].style.display = displayDefault;
         content_behind[2].style.display = displayOver;
     });
@@ -152,6 +172,7 @@ const serv_function = function() {
     serv_ai.addEventListener('mouseout', (e) => {
         e.preventDefault();
         serv_content_img[2].style.transform = scaleDefault;
+        back_color[2].style.transform = scaleDefault;
         content_front[2].style.display = displayOver;
         content_behind[2].style.display = displayDefault;
     });
@@ -159,6 +180,9 @@ const serv_function = function() {
     serv_xr.addEventListener('mouseover', (e) => {
         e.preventDefault();
         serv_content_img[3].style.transform = scaleMedium;
+        serv_content_img[3].style.transitionDuration = transDuration;
+        back_color[3].style.transform = scaleMedium;
+        back_color[3].style.transitionDuration = transDuration;
         content_front[3].style.display = displayDefault;
         content_behind[3].style.display = displayOver;
     });
@@ -166,6 +190,7 @@ const serv_function = function() {
     serv_xr.addEventListener('mouseout', (e) => {
         e.preventDefault();
         serv_content_img[3].style.transform = scaleDefault;
+        back_color[3].style.transform = scaleDefault;
         content_front[3].style.display = displayOver;
         content_behind[3].style.display = displayDefault;
     });
