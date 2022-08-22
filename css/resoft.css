@@ -318,7 +318,7 @@ nav a:active.add {
 }
 
 .main_header .header_txt_eng {
-  font-size: 40px;
+  font-size: var(--big);
   font-weight: 700;
   line-height: 58px;
 }
