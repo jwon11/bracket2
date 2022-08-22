@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/newslist.css">
-    <link rel="stylesheet" href="./css/white_menu.css">
-    <link rel="stylesheet" href="./css/mediaq.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- AOS 라이브러리 불러오기-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <title>Resoft</title>
 </head>
 <body id="newslist">
@@ -16,53 +17,52 @@
     <nav>
         <div class="nav_wrap">
             <div class="logo_wrap">
-                <a href="./index.html"><img src="./images/41-logo.png" alt="로고"></a>
+                <a href="https://jwon11.github.io/bracket2"><img src="./images/41-logo.png" alt="로고"></a>
             </div>
+
             <ul class="main_menu">
-                <li class="underline"><a href="./about.html">회사소개</a></li> 
-                <li class="underline"><a href="./overview.html">사업현황</a></li>
-                <li class="underline visit"><a href="./newslist.html">정보마당</a></li> <!-- visit 클래스 방문페이지 밑줄 -->
+                <li class="main_menu_1"><a href="./about.html.html">회사소개</a></li>
+                <li class="main_menu_2"><a href="./overview.html">사업현황</a></li>
+                <li class="main_menu_3"><a href="./newslist.html">정보마당</a></li>
             </ul>
+
             <div class="toggle_wrap">
                 <img src="./images/Icon-toggle.png" alt="토글메뉴">
             </div>
         </div>
         <div class="inner_wrap">
-            <hr>
             <div class="menu_inner">
                 <ul class="inner_ul">
                     <li class="inner_li">
-                        <div class="menu_slow"><a href="./about.html">회사소개</a></div>
                         <ul>
-                            <li><a href="./about.html#about_anchor">REsoft소개</a></li>
-                            <li><a href="./about.html#history_anchor">연혁</a></li>
-                            <li><a href="./about.html#organization_anchor">조직도</a></li>
-                            <li><a href="./about.html#certification_anchor">특허&인증</a></li>
-                            <li><a href="./about.html#directions_anchor">오시는길</a></li>
+                            <li><a href="#">REsoft소개</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">조직도</a></li>
+                            <li><a href="#">특허&인증</a></li>
+                            <li><a href="#">오시는길</a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="inner_ul">
                     <li class="inner_li">
-                        <div class="menu_slow"><a href="./overview.html">사업현황</a></div>
                         <ul>
-                            <li><a href="./overview.html#ecoce_anchor">ECOCE</a></li>
-                            <li><a href="./overview.html#moado_anchor">moaDo</a></li>
-                            <li><a href="./overview.html#etc_anchor">Etc</a></li>
+                            <li><a href="#">ECOCE</a></li>
+                            <li><a href="#">moaDo</a></li>
+                            <li><a href="#">Etc</a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="inner_ul"> 
                     <li class="inner_li">
-                        <div class="menu_slow"><a href="./newslist.html">정보마당</a></div>
                         <ul>
-                            <li><a href="./newslist.html#news_anchor">REsoft소식</a></li>
+                            <li><a href="./newslist.html">REsoft소식</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
     <!-- header -->
     <header>
         <div class="header_b">
@@ -72,37 +72,39 @@
     </header>
 
     <!-- 정보마당 -->
-    <div class="info_body" id="news_anchor">
+    <div class="info_body">
         <div class="info_content">
-            <p class="info_resoft">REsoft 소식</p>
-            <p class="info_news">NEWS</p>
+            <section class="info_rn">
+                <p class="info_resoft">REsoft 소식</p>
+                <p class="info_news">NEWS</p>
+            </section>
             <section class="info_article_list">
-                <a href="./article.html" class="info_article">
+                <a href="./article.html" class="info_article" data-aos="fade">
                     <figure><img src="./images/news_article.png" alt="기사이미지" class="info_article_img"></figure>
                     <p class="info_article_title">Lorem, ipsum dolor sit amet consectetur adipisicing ...</p>
                     <p class="info_article_date">2022.01.01</p>
                 </a>
-                <a href="./article.html" class="info_article">
+                <a href="./article.html" class="info_article" data-aos="fade">
                     <figure><img src="./images/news_article2.webp" alt="기사이미지" class="info_article_img"></figure>
                     <p class="info_article_title">Lorem, ipsum dolor sit amet consectetur adipisicing ...</p>
                     <p class="info_article_date">2022.01.01</p>
                 </a>
-                <a href="./article.html" class="info_article">
+                <a href="./article.html" class="info_article" data-aos="fade">
                     <figure><img src="./images/news_article3.jpg" alt="기사이미지" class="info_article_img"></figure>
                     <p class="info_article_title">Lorem, ipsum dolor sit amet consectetur adipisicing ...</p>
                     <p class="info_article_date">2022.01.01</p>
                 </a>
-                <a href="./article.html" class="info_article">
+                <a href="./article.html" class="info_article" data-aos="fade">
                     <figure><img src="./images/news_article4.jpg" alt="기사이미지" class="info_article_img"></figure>
                     <p class="info_article_title">Lorem, ipsum dolor sit amet consectetur adipisicing ...</p>
                     <p class="info_article_date">2022.01.01</p>
                 </a>
-                <a href="./article.html" class="info_article">
+                <a href="./article.html" class="info_article" data-aos="fade">
                     <figure><img src="./images/news_article5.jpg" alt="기사이미지" class="info_article_img"></figure>
                     <p class="info_article_title">Lorem, ipsum dolor sit amet consectetur adipisicing ...</p>
                     <p class="info_article_date">2022.01.01</p>
                 </a>
-                <a href="./article.html" class="info_article">
+                <a href="./article.html" class="info_article" data-aos="fade">
                     <figure><img src="./images/news_article6.jpg" alt="기사이미지" class="info_article_img"></figure>
                     <p class="info_article_title">Lorem, ipsum dolor sit amet consectetur adipisicing ...</p>
                     <p class="info_article_date">2022.01.01</p>
@@ -142,6 +144,7 @@
             </div>
                 <p class="copyright">© RESOFT CO.LTD. All Rights Reserved.</p>
         </div>
+
         <div class="footer_info_wrap">
             <p class="footer_info">
             상호 : (주)리소프트<br>
@@ -154,9 +157,8 @@
             </p>
         </div>
     </footer>
-    <!-- 외부링크 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./js/menu.js"></script>
     <script src="./js/newslist.js"></script>
+    <!-- AOS 스크립트 -->
+    <script>AOS.init();</script>
 </body>
 </html>
