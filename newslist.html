@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./css/mediaq.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- AOS 라이브러리 불러오기-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <title>Resoft</title>
 </head>
 <body id="newslist">
@@ -77,32 +80,32 @@
             <p class="info_resoft">REsoft 소식</p>
             <p class="info_news">NEWS</p>
             <section class="info_article_list">
-                <a href="./article.html" class="info_article">
+                <a href="./article.html" class="info_article" data-aos="fade">
                     <figure><img src="./images/news_article.png" alt="기사이미지" class="info_article_img"></figure>
                     <p class="info_article_title">Lorem, ipsum dolor sit amet consectetur adipisicing ...</p>
                     <p class="info_article_date">2022.01.01</p>
                 </a>
-                <a href="./article.html" class="info_article">
+                <a href="./article.html" class="info_article" data-aos="fade">
                     <figure><img src="./images/news_article2.webp" alt="기사이미지" class="info_article_img"></figure>
                     <p class="info_article_title">Lorem, ipsum dolor sit amet consectetur adipisicing ...</p>
                     <p class="info_article_date">2022.01.01</p>
                 </a>
-                <a href="./article.html" class="info_article">
+                <a href="./article.html" class="info_article" data-aos="fade">
                     <figure><img src="./images/news_article3.jpg" alt="기사이미지" class="info_article_img"></figure>
                     <p class="info_article_title">Lorem, ipsum dolor sit amet consectetur adipisicing ...</p>
                     <p class="info_article_date">2022.01.01</p>
                 </a>
-                <a href="./article.html" class="info_article">
+                <a href="./article.html" class="info_article" data-aos="fade">
                     <figure><img src="./images/news_article4.jpg" alt="기사이미지" class="info_article_img"></figure>
                     <p class="info_article_title">Lorem, ipsum dolor sit amet consectetur adipisicing ...</p>
                     <p class="info_article_date">2022.01.01</p>
                 </a>
-                <a href="./article.html" class="info_article">
+                <a href="./article.html" class="info_article" data-aos="fade">
                     <figure><img src="./images/news_article5.jpg" alt="기사이미지" class="info_article_img"></figure>
                     <p class="info_article_title">Lorem, ipsum dolor sit amet consectetur adipisicing ...</p>
                     <p class="info_article_date">2022.01.01</p>
                 </a>
-                <a href="./article.html" class="info_article">
+                <a href="./article.html" class="info_article" data-aos="fade">
                     <figure><img src="./images/news_article6.jpg" alt="기사이미지" class="info_article_img"></figure>
                     <p class="info_article_title">Lorem, ipsum dolor sit amet consectetur adipisicing ...</p>
                     <p class="info_article_date">2022.01.01</p>
@@ -158,5 +161,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/newslist.js"></script>
+    <script>AOS.init();</script>
 </body>
 </html>
